@@ -11,7 +11,7 @@ Run the following command to run the script once every 3 days<br>
 `echo '0 0 */3 * * ~/updater/update.sh' >> /var/spool/cron/crontabs/pi && exit`<br>
 Do this to run the patcher on startup<br>
 Run `sudo nano /etc/rc.local` and add the following code BEFORE the line `exit 0`<br>
-`0 0 */3 * * ~/updater/update.sh`
+`/home/pi/updater/update.sh &`
 
 # Credits
 FlameKat53: install.sh and updater.desktop files. 
