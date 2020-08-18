@@ -1,5 +1,5 @@
 # Twister OS Updater
-An updater for Twister OS that automatically downloads, unzips, and runs the latest patch for Twister OS. It is fine if you run the patcher more than once as it auto detecs your version.<br>
+An updater for Twister OS that automatically downloads, unzips, and runs the latest patch for Twister OS. It is fine if you run the patcher more than once as it auto detects your version.<br>
 
 
 #### Go support Twister OS!</br>
