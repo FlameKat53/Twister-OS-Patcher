@@ -23,8 +23,8 @@ else
 	echo 'Extracting .zip...'
 	unzip *.zip
 	rm *.zip
-	chmod +x *-patchinstall.sh
-	./*-patchinstall.sh
+	chmod +x *patchinstall.sh
+	./*patchinstall.sh
 	#rm *-patchinstall.sh
 fi
 else
