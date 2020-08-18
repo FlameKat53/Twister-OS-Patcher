@@ -1,5 +1,5 @@
 # TwisterOS-Updater
-An updater for TwisterOS that automaticly downloads, unzips, and runs the latest patch for TwisterOS.
+An updater for TwisterOS that automatically downloads, unzips, and runs the latest patch for TwisterOS.
 
 
 # Install
