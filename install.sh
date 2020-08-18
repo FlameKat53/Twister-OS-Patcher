@@ -8,6 +8,7 @@ mv twister-update.png ~/updater/icons/twister-update.png
 mv twister-update-blue.png ~/updater/icons/twister-update-blue.png
 mv twister-update-dark.png ~/updater/icons/twister-update-dark.png
 mv update.sh ~/updater/update.sh
+mv uninstall.sh ~/updater/uninstall.sh
 mv updater.desktop ~/.local/share/applications/updater.desktop
 cd ../
 rm -r Twister-OS-Updater-master/
