@@ -30,11 +30,17 @@ If the default icon for the application is a little too "dark" for you, then rig
 # Support
 If you have any problems, make a issue in this repository or go to the Pi Labs discord to connect with us at https://discord.gg/ttxhYrX
 
+# Demostration
+This patcher has been featured in the following places:
+
+
 # Credits
-FlameKat53: install.sh and updater.desktop files. 
-@MobileGamesMotionYT#7199 on Discord: install.sh and light icon
-Grayduck: dark icon
+FlameKat53: update.sh and updater.desktop files<br>
+MobileGamesMotionYT#7199 on Discord: Install.sh and README
+Grayduck: Icons and checkversion.sh script
+Aquarirus on Discord: Landscape title art
+Phoenixbyrd on Disocrd: Uploading files for us to the website.
 
 # To-do
-- [ ] Automatically update in order from current release to latest release
+- [x] Automatically update in order from current release to latest release
 - [ ] Get program installed by default onto TwisterOS
