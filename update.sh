@@ -1,6 +1,6 @@
 #!/bin/bash
-echo Updating TwisterOS to the latest version
-read -p "The updater will now update TwisterOS. When ready, press [Enter] to try to update, or, press [CTRL+C] to close the updater..."
+echo "Checking for and applying Twister OS updates..."
+read -p "This application will now attempt to update Twister OS. When ready, press [Enter] to update, or press [CTRL+C] to close the updater..."
 cd ~/updater/
 wget https://twisteros.com/Patches/checkversion.sh
 . checkversion.sh
@@ -11,9 +11,9 @@ fi
 wget https://twisteros.com/Patches/latest.txt
 if [ -f "$FILE" ]; then
 VERSIONLATEST=$(cat latest.txt)
-	rm *patchinstall.sh
+	rm -f *patchinstall.sh
 	checkVersion
-	echo 'Already up to date.'
+	echo "You are running the most current version."
 else
 	echo "You seem to be offline!"
 fi
