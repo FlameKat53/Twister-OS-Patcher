@@ -8,3 +8,4 @@ mv update.sh ~/updater/update.sh
 mv updater.desktop ~/.local/share/applications/updater.desktop
 cd ../
 rm -r TwisterOS-Updater-master/
+chmod +x ~/updater/update.sh
