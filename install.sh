@@ -3,9 +3,10 @@ wget https://github.com/FlameKat53/TwisterOS-Updater/archive/master.zip
 unzip master.zip
 cd TwisterOS-Updater-master/
 mkdir ~/updater/
-mv twister-update.png ~/updater/twister-update.png
-mv twister-update-blue.png ~/updater/twister-update-blue.png
-mv twister-update-dark.png ~/updater/twister-update-dark.png
+mkdir ~/updater/icons/
+mv twister-update.png ~/updater/icons/twister-update.png
+mv twister-update-blue.png ~/updater/icons/twister-update-blue.png
+mv twister-update-dark.png ~/updater/icons/twister-update-dark.png
 mv update.sh ~/updater/update.sh
 mv updater.desktop ~/.local/share/applications/updater.desktop
 cd ../
