@@ -6,7 +6,7 @@ If you're on a version that is not the previous latest (e.g. you're on 1.5 and t
 `cd ~/Downloads && wget https://raw.githubusercontent.com/FlameKat53/TwisterOS-Updater/master/install.sh && chmod +x ./install.sh &&./install.sh`
 
 # Automatically Patch
-Run the following command to run the script once every 3 days
+Run the following command to run the script once every 3 days<br>
 `sudo su`<br>
 `echo '0 0 */3 * * ~/updater/update.sh' >> /var/spool/cron/crontabs/pi && exit`<br>
 Run this to run the patcher on startup<br>
