@@ -12,7 +12,9 @@ Run this to run the patcher on startup
 `echo '0 0 */3 * * ~/updater/update.sh' >> /etc/rc.local`
 
 # Credits
-FlameKat53: install.sh and updater.desktop files. @MobileGamesMotionYT#7199 on Discord: desktop file icon and install.sh
+FlameKat53: install.sh and updater.desktop files. 
+@MobileGamesMotionYT#7199 on Discord: install.sh
+grayduck: icon
 
 # To-do
 - [ ] Automatically update in order from current release to latest release
