@@ -6,7 +6,7 @@ An updater for Twister OS that automatically downloads, unzips, and runs the lat
 ### <a href="https://twisteros.com/">>Twister OS<</a>
 
 # Install
-`cd ~/Downloads && wget https://raw.githubusercontent.com/FlameKat53/TwisterOS-Updater/master/install.sh && chmod +x ./install.sh && ./install.sh`
+`cd ~/Downloads && wget https://raw.githubusercontent.com/FlameKat53/Twister-OS-Updater/master/install.sh && chmod +x ./install.sh && ./install.sh`
 
 # Uninstall
 `~/updater/uninstall.sh`
