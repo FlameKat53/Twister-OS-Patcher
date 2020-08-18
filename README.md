@@ -23,19 +23,9 @@ Run `sudo nano /etc/rc.local` and add the following code BEFORE the line `exit 0
 
 # Icon
 [![twister-update-blue.png](https://i.postimg.cc/tJy5MqsN/twister-update-blue.png)](https://postimg.cc/WFWgDP6d)<br>
-If the default icon for the application is a little too "dark" for you, then replace the contents of 'updater.desktop'
-with this:<br>
-`[Desktop Entry]`<br>
-`Name=TwisterOS Updater`<br>
-`Comment=Automatically patches TwisterOS to the latest version`<br>
-`Exec=/home/pi/updater/update.sh`<br>
-`Icon=/home/pi/updater/updater.jpg`<br>
-`Version=1.0`<br>
-`Type=Application`<br>
-`Categories=System`<br>
-`Terminal=true`<br>
-`StartupNotify=false`<br>
-`Path=`<br>
+If the default icon for the application is a little too "dark" for you, then right click on the application and select 'Edit application'. Then click on the icon and choose `twister-update-blue.png` or `twister-update.png` as seen in the images below. The icon will become the one shown below.
+[![18-08-2020-12-08-17-REC.png](https://i.postimg.cc/mkVFbMwh/18-08-2020-12-08-17-REC.png)](https://postimg.cc/8fJC47xV)<br>
+[![18-08-2020-12-08-49-REC.png](https://i.postimg.cc/MZYBb2Sx/18-08-2020-12-08-49-REC.png)](https://postimg.cc/pypyRSr1)
 
 # Support
 If you have any problems, make a issue in this repository or go to the Pi Labs discord to connect with us at https://discord.gg/ttxhYrX
