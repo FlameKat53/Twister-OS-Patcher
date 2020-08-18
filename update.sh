@@ -11,6 +11,7 @@ fi
 wget https://twisteros.com/Patches/latest.txt
 if [ -f "$FILE" ]; then
 VERSIONLATEST=$(cat latest.txt)
+	rm *patchinstall.sh
 	checkVersion
 	echo 'Already up to date.'
 else
