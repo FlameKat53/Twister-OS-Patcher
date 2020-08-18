@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/bin/sh
 echo Updating TwisterOS to the latest version
-cd ~/updater/
-FILE=~/updater/latest.txt
+cd /home/pi/updater/
+FILE=/home/pi/updater/latest.txt
 if [ -f "$FILE" ]; then
     rm latest.txt
 fi
@@ -18,11 +18,13 @@ else
 	wget https://twisteros.com/Patches/latestLink.txt
 	VERSIONLINK=$(cat latestLink.txt)
 	rm latestLink.txt
+	wget $VERSIONLINK
 	echo 'Extracting .zip...'
 	unzip *.zip
-	chmod +x *patchinstall.sh
-	./*patchinstall.sh
-	#rm *patchinstall.sh
+	rm *.zip
+	chmod +x *-patchinstall.sh
+	./*-patchinstall.sh
+	#rm *-patchinstall.sh
 fi
 else
 	echo "You seem to be offline!"
