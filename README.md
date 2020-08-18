@@ -9,9 +9,9 @@ If you're on a version that is not the previous latest (e.g. you're on 1.5 and t
 Run the following command to run the script once every 3 days<br>
 `sudo su`<br>
 `echo '0 0 */3 * * ~/updater/update.sh' >> /var/spool/cron/crontabs/pi && exit`<br>
-Run this to run the patcher on startup<br>
-`sudo su `<br>
-`echo '0 0 */3 * * ~/updater/update.sh' >> /etc/rc.local && exit`<br>
+Do this to run the patcher on startup<br>
+Run `sudo nano /etc/rc.local` and add the following code BEFORE the line `exit 0`<br>
+`0 0 */3 * * ~/updater/update.sh`
 
 # Credits
 FlameKat53: install.sh and updater.desktop files. 
