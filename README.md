@@ -32,7 +32,7 @@ with this:<br>
 `Icon=/home/pi/updater/updater.jpg`<br>
 `Version=1.0`<br>
 `Type=Application`<br>
-`Categories=Settings`<br>
+`Categories=System`<br>
 `Terminal=true`<br>
 `StartupNotify=false`<br>
 `Path=`<br>
