@@ -7,9 +7,10 @@ If you're on a version that is not the previous latest (e.g. you're on 1.5 and t
 
 # Automatically Patch
 Run the following command to run the script once every 3 days
-`sudo su && echo '0 0 */3 * * ~/updater/update.sh' >> /var/spool/cron/crontabs/pi && exit`
-Run this to run the patcher on startup
-`echo '0 0 */3 * * ~/updater/update.sh' >> /etc/rc.local`
+`sudo su`<br>
+`echo '0 0 */3 * * ~/updater/update.sh' >> /var/spool/cron/crontabs/pi && exit`<br>
+Run this to run the patcher on startup<br>
+`echo '0 0 */3 * * ~/updater/update.sh' >> /etc/rc.local`<br>
 
 # Credits
 FlameKat53: install.sh and updater.desktop files. 
