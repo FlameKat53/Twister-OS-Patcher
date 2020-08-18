@@ -1,7 +1,6 @@
 # TwisterOS-Updater
 [![twister-update-dark.png](https://i.postimg.cc/nrkk8y7b/twister-update-dark.png)](https://postimg.cc/p5m8z1qq)<br>
-An updater for TwisterOS that automatically downloads, unzips, and runs the latest patch for TwisterOS.
-If you're on a version that is not the previous latest (e.g. you're on 1.5 and the latest is 1.7) you WILL break your install, so it's recommended to run the tool at least once a week with cron, or every time you boot the Pi with rc.local because if an update is missed, files will be broken. Also do NOT run this on Raspberry Pi OS because it will BREAK too. It is fine if you run the latest patch multiple times.
+An updater for TwisterOS that automatically downloads, unzips, and runs the latest patch for TwisterOS. It is fine if you run the patcher more than once as it auto detecs your version.
 
 #### Go support TwisterOS!</br>
 ### <a href="https://twisteros.com/">>TwisterOS<</a>
@@ -14,9 +13,10 @@ If you're on a version that is not the previous latest (e.g. you're on 1.5 and t
 Go in the applications menu and search for TwisterOS updater in the system section. Click on it and a terminal window will open.
 
 # Automatically Patch
-Run the following command to run the script once every 3 days<br>
+We suggest doing the steps below 
+Run the following command to run the script once every week<br>
 `sudo su`<br>
-`echo '0 0 */3 * * ~/updater/update.sh' >> /var/spool/cron/crontabs/pi && exit`<br>
+`echo '0 0 * * 0 ~/updater/update.sh' >> /var/spool/cron/crontabs/pi && exit`<br>
 Do this to run the patcher on startup<br>
 Run `sudo nano /etc/rc.local` and add the following code BEFORE the line `exit 0` as seen in the image below<br>
 `/home/pi/updater/update.sh &` 
