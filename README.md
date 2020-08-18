@@ -1,16 +1,16 @@
-# TwisterOS-Updater
+# Twister OS Updater
 [![twister-update-dark.png](https://i.postimg.cc/nrkk8y7b/twister-update-dark.png)](https://postimg.cc/p5m8z1qq)<br>
-An updater for TwisterOS that automatically downloads, unzips, and runs the latest patch for TwisterOS. It is fine if you run the patcher more than once as it auto detecs your version.
+An updater for Twister OS that automatically downloads, unzips, and runs the latest patch for Twister OS. It is fine if you run the patcher more than once as it auto detecs your version.
 
-#### Go support TwisterOS!</br>
-### <a href="https://twisteros.com/">>TwisterOS<</a>
+#### Go support Twister OS!</br>
+### <a href="https://twisteros.com/">>Twister OS<</a>
 
 # Install
 `cd ~/Downloads && wget https://raw.githubusercontent.com/FlameKat53/TwisterOS-Updater/master/install.sh && chmod +x ./install.sh &&./install.sh`
 
 # Usage
 [![18-08-2020-08-02-21-REC.png](https://i.postimg.cc/cHq94jWb/18-08-2020-08-02-21-REC.png)](https://postimg.cc/DWgdxx8r)<br>
-Go in the applications menu and search for TwisterOS updater in the system section. Click on it and a terminal window will open.
+Go in the applications menu and search for Twister OS updater in the system section. Click on it and a terminal window will open.
 
 # Automatically Patch
 We suggest doing the steps below 
