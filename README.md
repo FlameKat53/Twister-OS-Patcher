@@ -10,7 +10,7 @@ An updater for Twister OS that automatically downloads, unzips, and runs the lat
 
 # Usage
 [![18-08-2020-08-02-21-REC.png](https://i.postimg.cc/cHq94jWb/18-08-2020-08-02-21-REC.png)](https://postimg.cc/DWgdxx8r)<br>
-Go in the applications menu and search for Twister OS updater in the system section. Click on it and a terminal window will open.
+Go in the applications menu and search for Twister OS updater in the system section. Click on it and a terminal window will open. Press enter to continue and the progran will check to see which version you are on and if you are on the latest version, it'll tell you you are and you can close it.
 
 # Automatically Patch
 We suggest doing the steps below 
@@ -43,4 +43,4 @@ Phoenixbyrd on Disocrd: Uploading files for us to the website<br>
 
 # To-do
 - [x] Automatically update in order from current release to latest release
-- [ ] Get program installed by default onto TwisterOS
+- [ ] Get program installed by default onto Twister OS
