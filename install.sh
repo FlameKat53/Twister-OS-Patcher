@@ -1,4 +1,3 @@
-#!/bin/bash
 echo 'Installing TwisterOS Patcher by FlameKat53 and MobileGamesMotionYT...'
 wget https://github.com/FlameKat53/TwisterOS-Updater/archive/master.zip
 unzip master.zip
