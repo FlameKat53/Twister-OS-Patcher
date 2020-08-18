@@ -24,17 +24,17 @@ Run `sudo nano /etc/rc.local` and add the following code BEFORE the line `exit 0
 # Icon
 If the default icon for the application is a little too "dark" for you, then replace the contents of 'updater.desktop'
 with this:<br>
-`[Desktop Entry]
-Name=TwisterOS Updater
-Comment=Automatically patches TwisterOS to the latest version
-Exec=/home/pi/updater/update.sh
-Icon=/home/pi/updater/updater.jpg
-Version=1.0
-Type=Application
-Categories=Settings
-Terminal=true
-StartupNotify=false
-Path=`
+`[Desktop Entry]`<br>
+`Name=TwisterOS Updater`<br>
+`Comment=Automatically patches TwisterOS to the latest version`<br>
+`Exec=/home/pi/updater/update.sh`<br>
+`Icon=/home/pi/updater/updater.jpg`<br>
+`Version=1.0`<br>
+`Type=Application`<br>
+`Categories=Settings`<br>
+`Terminal=true`<br>
+`StartupNotify=false`<br>
+`Path=`<br>
 
 # Credits
 FlameKat53: install.sh and updater.desktop files. 
