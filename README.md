@@ -6,4 +6,7 @@ If you're on a version that is not the previous latest (e.g. you're on 1.5 and t
 `cd ~/Downloads && wget https://github.com/FlameKat53/TwisterOS-Updater/blob/master/install.sh && ./install.sh`
 
 # Credits
-MobileGamesMotionYT#7199 on Discord: desktop file icon and install.sh
+FlameKat53: install.sh and updater.desktop files. @MobileGamesMotionYT#7199 on Discord: desktop file icon and install.sh
+
+# To-do
+- [ ] Automaticly update in order from current release to latest release
