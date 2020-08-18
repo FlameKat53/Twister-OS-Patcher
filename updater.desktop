@@ -2,8 +2,8 @@
 Name=TwisterOS Updater
 Comment=Automatically patches TwisterOS to the latest version
 Exec=/home/pi/updater/update.sh
-Icon=/home/pi/updater/twister-update.png
-Version=1.0
+Icon=/home/pi/updater/twister-update-dark.png
+Version=0.9
 Type=Application
 Categories=Settings
 Terminal=true
