@@ -1,6 +1,6 @@
 # Twister OS Updater
-[![twister-update-dark.png](https://i.postimg.cc/nrkk8y7b/twister-update-dark.png)](https://postimg.cc/p5m8z1qq)<br>
-An updater for Twister OS that automatically downloads, unzips, and runs the latest patch for Twister OS. It is fine if you run the patcher more than once as it auto detecs your version.
+An updater for Twister OS that automatically downloads, unzips, and runs the latest patch for Twister OS. It is fine if you run the patcher more than once as it auto detecs your version.<br>
+
 
 #### Go support Twister OS!</br>
 ### <a href="https://twisteros.com/">>Twister OS<</a>
