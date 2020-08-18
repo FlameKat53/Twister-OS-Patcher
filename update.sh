@@ -1,7 +1,7 @@
 #!/bin/sh
 echo Updating TwisterOS to the latest version
-cd /home/pi/updater/
-FILE=/home/pi/updater/latest.txt
+cd ~/updater/
+FILE=~/updater/latest.txt
 if [ -f "$FILE" ]; then
     rm latest.txt
 fi
