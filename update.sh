@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 echo Updating TwisterOS to the latest version
 cd ~/updater/
 FILE=~/updater/latest.txt
