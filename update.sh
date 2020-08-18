@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Checking for and applying Twister OS updates..."
+echo "Checking for and installing available Twister OS patches..."
 read -p "This application will now attempt to update Twister OS. When ready, press [Enter] to update, or press [CTRL+C] to close the updater..."
 cd ~/updater/
 wget https://twisteros.com/Patches/checkversion.sh
