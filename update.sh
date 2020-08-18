@@ -25,7 +25,7 @@ else
 	rm *.zip
 	chmod +x *patchinstall.sh
 	./*patchinstall.sh
-	#rm *-patchinstall.sh
+	#rm *patchinstall.sh
 fi
 else
 	echo "You seem to be offline!"
