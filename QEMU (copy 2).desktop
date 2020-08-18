@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Update TwisterOS
+Comment=Updater
+Exec=/home/pi/updater/update.sh
+Icon=/home/pi/updater/updater.png
+Version=1.0
+Type=Application
+Categories=Settings
+Terminal=true
+StartupNotify=false
