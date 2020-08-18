@@ -1,4 +1,4 @@
-echo 'Installing TwisterOS Patcher by FlameKat53 and MobileGamesMotionYT...'
+echo 'Installing Twister OS Patcher by FlameKat53 and MobileGamesMotionYT...'
 wget https://github.com/FlameKat53/Twister-OS-Updater/archive/master.zip
 unzip master.zip
 cd Twister-OS-Updater-master/
