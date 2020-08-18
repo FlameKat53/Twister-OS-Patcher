@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=Update TwisterOS
-Comment=Updater
+Name=TwisterOS Updater
+Comment=Automaticly patches twisterOS to the latest version
 Exec=/home/pi/updater/update.sh
-Icon=/home/pi/updater/updater.png
+Icon=/home/pi/updater/updater.jpg
 Version=1.0
 Type=Application
 Categories=Settings
