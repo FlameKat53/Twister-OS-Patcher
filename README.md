@@ -43,4 +43,5 @@ Phoenixbyrd on Disocrd: Uploading files for us to the website<br>
 
 # To-do
 - [x] Automatically update in order from current release to latest release
+- [x] Uninstall script
 - [ ] Get program installed by default onto Twister OS
