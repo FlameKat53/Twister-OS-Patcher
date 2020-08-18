@@ -10,7 +10,8 @@ Run the following command to run the script once every 3 days<br>
 `sudo su`<br>
 `echo '0 0 */3 * * ~/updater/update.sh' >> /var/spool/cron/crontabs/pi && exit`<br>
 Run this to run the patcher on startup<br>
-`echo '0 0 */3 * * ~/updater/update.sh' >> /etc/rc.local`<br>
+`sudo su `<br>
+`echo '0 0 */3 * * ~/updater/update.sh' >> /etc/rc.local && exit`<br>
 
 # Credits
 FlameKat53: install.sh and updater.desktop files. 
