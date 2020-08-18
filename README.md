@@ -21,6 +21,20 @@ Do this to run the patcher on startup<br>
 Run `sudo nano /etc/rc.local` and add the following code BEFORE the line `exit 0` as seen in the image below<br>
 `/home/pi/updater/update.sh &` 
 
+# Icon
+If the default icon for the application is a little too "dark" for you, then replace the contents of 'updater.desktop'
+with this:<br>
+`[Desktop Entry]
+Name=TwisterOS Updater
+Comment=Automatically patches TwisterOS to the latest version
+Exec=/home/pi/updater/update.sh
+Icon=/home/pi/updater/updater.jpg
+Version=1.0
+Type=Application
+Categories=Settings
+Terminal=true
+StartupNotify=false
+Path=`
 
 # Credits
 FlameKat53: install.sh and updater.desktop files. 
