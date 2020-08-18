@@ -1,5 +1,6 @@
 #!/bin/bash
 echo Updating TwisterOS to the latest version
+read -p "The updater will now update TwisterOS. When ready, press [Enter] to try to update, or, press [CTRL+C] to close the updater..."
 cd ~/updater/
 FILE=~/updater/latest.txt
 if [ -f "$FILE" ]; then
