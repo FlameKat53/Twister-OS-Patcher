@@ -10,7 +10,7 @@ If you're on a version that is not the previous latest (e.g. you're on 1.5 and t
 `cd ~/Downloads && wget https://raw.githubusercontent.com/FlameKat53/TwisterOS-Updater/master/install.sh && chmod +x ./install.sh &&./install.sh`
 
 # Usage
-[![18-08-2020-08-02-21-REC.png](https://i.postimg.cc/cHq94jWb/18-08-2020-08-02-21-REC.png)](https://postimg.cc/DWgdxx8r)
+[![18-08-2020-08-02-21-REC.png](https://i.postimg.cc/cHq94jWb/18-08-2020-08-02-21-REC.png)](https://postimg.cc/DWgdxx8r)<br>
 Go in the applications menu and search for TwisterOS updater in the system section. Click on it and a terminal window will open.
 
 # Automatically Patch
@@ -36,10 +36,13 @@ with this:<br>
 `StartupNotify=false`<br>
 `Path=`<br>
 
+# Support
+If you have any problems, make a issue in this repository or go to the Pi Labs discord to connect with us at https://discord.gg/ttxhYrX
+
 # Credits
 FlameKat53: install.sh and updater.desktop files. 
-@MobileGamesMotionYT#7199 on Discord: install.sh
-grayduck: icon
+@MobileGamesMotionYT#7199 on Discord: install.sh and light icon
+Grayduck: dark icon
 
 # To-do
 - [ ] Automatically update in order from current release to latest release
