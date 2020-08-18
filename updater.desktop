@@ -2,7 +2,7 @@
 Name=TwisterOS Updater
 Comment=Automatically patches TwisterOS to the latest version
 Exec=~/updater/update.sh
-Icon=~/updater/updater.jpg
+Icon=~/updater/twister-updater.png
 Version=1.0
 Type=Application
 Categories=Settings
