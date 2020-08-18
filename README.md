@@ -36,10 +36,10 @@ This patcher has been featured in the following places:
 
 # Credits
 FlameKat53: update.sh and updater.desktop files<br>
-MobileGamesMotionYT#7199 on Discord: Install.sh and README
-Grayduck: Icons and checkversion.sh script
-Aquarirus on Discord: Landscape title art
-Phoenixbyrd on Disocrd: Uploading files for us to the website.
+MobileGamesMotionYT#7199 on Discord: Install.sh and README<br>
+Grayduck: Icons and checkversion.sh script<br>
+Aquarirus on Discord: Landscape title art<br>
+Phoenixbyrd on Disocrd: Uploading files for us to the website<br>
 
 # To-do
 - [x] Automatically update in order from current release to latest release
