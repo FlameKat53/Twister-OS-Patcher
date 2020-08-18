@@ -9,7 +9,7 @@ An updater for Twister OS that automatically downloads, unzips, and runs the lat
 `cd ~/Downloads && wget https://raw.githubusercontent.com/FlameKat53/TwisterOS-Updater/master/install.sh && chmod +x ./install.sh && ./install.sh`
 
 # Uninstall
-`chmod +x ~/updater/uninstall.sh && ./updater/uninstall.sh`
+`~/updater/uninstall.sh`
 
 # Usage
 [![18-08-2020-08-02-21-REC.png](https://i.postimg.cc/cHq94jWb/18-08-2020-08-02-21-REC.png)](https://postimg.cc/DWgdxx8r)<br>
