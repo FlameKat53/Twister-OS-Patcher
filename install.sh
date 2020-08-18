@@ -4,7 +4,8 @@ unzip master.zip
 cd TwisterOS-Updater-master/
 mkdir ~/updater/
 mv twister-update.png ~/updater/twister-update.png
-mv updater.jpg ~/updater/updater.jpg
+mv twister-update-blue.png ~/updater/twister-update-blue.png
+mv twister-update-dark.png ~/updater/twister-update-dark.png
 mv update.sh ~/updater/update.sh
 mv updater.desktop ~/.local/share/applications/updater.desktop
 cd ../
