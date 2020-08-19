@@ -9,3 +9,4 @@ rm ~/.local/share/applications/patcher.desktop
 if [ -f ~/Desktop/patcher.desktop ]; then
 rm ~/Desktop/patcher.desktop
 fi
+
