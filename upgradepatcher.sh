@@ -1,4 +1,4 @@
-#Copy .desktop file
+#Copy .desktop file and cron
 cp ~/Desktop/patcher.desktop ~/Pictures/patcher.desktop
 
 #Uninstalls and reinstalls the patcher
