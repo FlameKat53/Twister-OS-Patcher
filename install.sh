@@ -10,6 +10,7 @@ mkdir -p /home/pi/patcher/icons/
 mv twister-update.png /home/pi/patcher/icons/twister-update.png
 mv twister-update-blue.png /home/pi/patcher/icons/twister-update-blue.png
 mv twister-update-dark.png /home/pi/patcher/icons/twister-update-dark.png
+mv arrow-white.png /home/pi/patcher/icons/arrow-white.png
 
 #Move scripts into patcher folder
 mv patch.sh /home/pi/patcher/patch.sh
