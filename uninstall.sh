@@ -12,7 +12,5 @@ fi
 if [ -f /home/pi/Desktop/patcher.desktop ]; then
   rm /home/pi/Desktop/patcher.desktop
 fi
-if [ -f /home/pi/patcher/crontab.bak ]; then
-  crontab /home/pi/patcher/crontab.bak
-fi
+crontab -l | sed "s/^@weekly/#&/" | crontab -
 echo 'Uninstalled.'
