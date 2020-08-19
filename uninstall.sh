@@ -10,4 +10,10 @@ fi
 if [ -f ~/Desktop/patcher.desktop ]; then
   rm ~/Desktop/patcher.desktop
 fi
+if [ -f ~/patcher/crontab.bak ]; then
+  crontab ~/patcher/crontab.bak
+fi
+if [ -f ~/patcher/rc.bak ]; then
+  mv ~/patcher/rc.bak /etc/rc.local
+fi
 echo 'Uninstalled.'

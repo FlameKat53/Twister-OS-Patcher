@@ -11,6 +11,9 @@ mv uninstall.sh ~/patcher/uninstall.sh
 mv upgradepatcher.sh ~/patcher/upgradepatcher.sh
 sudo chmod +x patcher.desktop
 mv patcher.desktop ~/.local/share/applications/patcher.desktop
+cp /etc/rc.local ~/patcher/rc.bak
+crontab -l > ~/patcher/crontab.bak
+(crontab -l ; echo "0 10 * * 1 ~/patcher/upgradepatcher.sh")| crontab -
 cp ~/.local/share/applications/patcher.desktop ~/Desktop
 cd ../
 rm -r Twister-OS-Patcher-master/
