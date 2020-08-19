@@ -17,7 +17,7 @@ mv uninstall.sh ~/patcher/uninstall.sh
 mv upgradepatcher.sh ~/patcher/upgradepatcher.sh
 
 #Move patcher.desktop
-sudo chmod +x patcher.desktop
+sudo chmod +x patcherdesktop.desktop
 mv patcherdesktop.desktop ~/.local/share/applications/patcherdesktop.desktop
 cp ~/.local/share/applications/patcherdesktop.desktop ~/Desktop
 
