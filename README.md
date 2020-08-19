@@ -8,10 +8,10 @@ An updater for Twister OS that automatically downloads, unzips, and runs the lat
 
 # Install/Update
 `wget https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/master/install.sh && chmod +x ./install.sh && ./install.sh && rm install.sh`<br>
-If you notice the repo has been changed, run `bash ~/patcher/upgradepatcher.sh` to update your current version of the patcher.
+If you notice the repo has been changed, run `twistpatch-update` to update your current version of the patcher.
 
 # Uninstall
-`bash ~/patcher/uninstall.sh`
+`twistpatch-remove`
 
 # Usage
 [![18-08-2020-08-02-21-REC.png](https://i.postimg.cc/cHq94jWb/18-08-2020-08-02-21-REC.png)](https://postimg.cc/DWgdxx8r)<br>
