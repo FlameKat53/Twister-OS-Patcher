@@ -36,10 +36,10 @@ if [ ! -f "/usr/local/bin/twistpatch-update" ]; then
 fi
 
 #Install commands
-#sudo ln -s /home/pi/updater/patch.sh /usr/local/bin/twistpatch
-#sudo ln -s /home/pi/updater/uninstall.sh /usr/local/bin/twistpatch-uninstall
-#sudo ln -s /home/pi/updater/upgradepatcher.sh /usr/local/bin/twistpatch-update
-#source ~/.bashrc
+sudo ln -s /home/pi/updater/patch.sh /usr/local/bin/twistpatch
+sudo ln -s /home/pi/updater/uninstall.sh /usr/local/bin/twistpatch-uninstall
+sudo ln -s /home/pi/updater/upgradepatcher.sh /usr/local/bin/twistpatch-update
+source ~/.bashrc
 
 #Remove useless folders and make all files executable
 cd ../
