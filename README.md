@@ -23,11 +23,6 @@ twistpatch upgrade     Removes and reinstalls TwistPatcher to get the latest cod
 twistpatch uninstall   Uninstalls TwistPatcher from your system
 ```
 
-# Automatically Patch
-We suggest doing the steps below 
-Run the following command to run the script once every week<br>
-`(crontab -l ; echo "0 10 * * 1 ~/patcher/patch.sh")| crontab -`<br>
-
 # Icon
 [![twister-update-blue.png](https://i.postimg.cc/6qNWSdHT/twister-update-blue.png)](https://postimg.cc/HcB1871C)<br>
 If the default icon for the application is a little too "dark" for you, then right-click on the application and select 'Edit application'. Then click on the icon and choose `twister-update-blue.png` or `twister-update.png` as seen in the images below. The icon will become the one shown above.<br>
@@ -47,6 +42,7 @@ MobileGamesMotionYT#7199 on Discord: The idea of an automatic patcher, install.s
 Grayduck: Icons and checkversion.sh script<br>
 Aquarius on Discord: Landscape title art<br>
 Phoenixbyrd on Disocrd: Uploading files for us to the website<br>
+[kreal](https://github.com/krishenriksen): checkforupdates.sh, modifying install.sh
 
 # Changes
 Dev phase
