@@ -9,20 +9,20 @@ An updater for Twister OS that automatically downloads, unzips, and runs the lat
 `wget https://github.com/FlameKat53/Twister-OS-Patcher/master/install.sh && chmod +x ./install.sh && ./install.sh && rm install.sh`
 
 # Uninstall
-`/home/pi/updater/uninstall.sh`
+`/home/pi/patcher/uninstall.sh`
 
 # Usage
 [![18-08-2020-08-02-21-REC.png](https://i.postimg.cc/cHq94jWb/18-08-2020-08-02-21-REC.png)](https://postimg.cc/DWgdxx8r)<br>
-Go in the applications menu and search for Twister OS updater in the system section. Click on it and a terminal window will open. Press enter to continue and the progran will check to see which version you are on and if you are on the latest version, it'll tell you you are and you can close it.
+Go in the applications menu and search for Twister OS Patcher in the system section. Click on it and a terminal window will open. Press enter to continue and the progran will check to see which version you are on and if you are on the latest version, it'll tell you you are and you can close it.
 
 # Automatically Patch
 We suggest doing the steps below 
 Run the following command to run the script once every week<br>
 `sudo su`<br>
-`echo '0 0 * * 0 ~/updater/update.sh' >> /var/spool/cron/crontabs/pi && exit`<br>
+`echo '0 0 * * 0 ~/patcher/update.sh' >> /var/spool/cron/crontabs/pi && exit`<br>
 Do this to run the patcher on startup<br>
 Run `sudo nano /etc/rc.local` and add the following code BEFORE the line `exit 0` as seen in the image below<br>
-`/home/pi/updater/update.sh &` 
+`/home/pi/patcher/update.sh &` 
 
 # Icon
 [![twister-update-blue.png](https://i.postimg.cc/tJy5MqsN/twister-update-blue.png)](https://postimg.cc/WFWgDP6d)<br>
@@ -38,7 +38,7 @@ This patcher has been featured in the following places:
 
 
 # Credits
-FlameKat53: update.sh and updater.desktop files<br>
+FlameKat53: patch.sh and patcher.desktop files<br>
 MobileGamesMotionYT#7199 on Discord: The idea of a automatic patcher, install.sh and README<br>
 Grayduck: Icons and checkversion.sh script<br>
 Aquarirus on Discord: Landscape title art<br>
