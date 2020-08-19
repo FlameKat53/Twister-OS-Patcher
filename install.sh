@@ -28,12 +28,15 @@ cp /home/pi/.local/share/applications/patcher.desktop /home/pi/Desktop
 #Remove commands
 if [ ! -f "/usr/local/bin/twistpatch" ]; then
     sudo ln -s /home/pi/updater/patch.sh /usr/local/bin/twistpatch
+    sudo chmod 755 /usr/local/bin/twistpatch
 fi
 if [ ! -f "/usr/local/bin/twistpatch-uninstall" ]; then
     sudo ln -s /home/pi/updater/uninstall.sh /usr/local/bin/twistpatch-uninstall
+    sudo chmod 755 /usr/local/bin/twistpatch-uninstall
 fi
 if [ ! -f "/usr/local/bin/twistpatch-update" ]; then
     sudo ln -s /home/pi/updater/upgradepatcher.sh /usr/local/bin/twistpatch-update
+    sudo chmod 755 /usr/local/bin/twistpatch-update
 fi
 
 #Install commands
