@@ -21,7 +21,7 @@ mv checkforupdates.sh ~/patcher/checkforupdates.sh
 #Move patcher.desktop
 sudo chmod +x patcher.desktop
 mv patcher.desktop ~/.local/share/applications/patcher.desktop
-cp ~/.local/share/applications/patcher.desktop ~/Desktop
+cp ~/.local/share/applications/patcher.desktop ~/Desktop/patcher.desktop
 
 # Add new crontab for checking each Monday at 11:00AM
 (crontab -l && echo "0 11 * * 1 ~/patcher/checkforupdates.sh") | crontab -
