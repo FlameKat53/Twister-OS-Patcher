@@ -6,6 +6,5 @@ rm -r ~/patcher/
 fi
 if [ -f ~/.local/share/applications/patcher.desktop ]; then
 rm ~/.local/share/applications/patcher.desktop
-if [ -f ~/Desktop/patcher.desktop ]; then
 rm ~/Desktop/patcher.desktop
 fi
