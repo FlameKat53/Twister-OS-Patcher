@@ -1,5 +1,5 @@
 # Twister OS Patcher
-An updater for Twister OS that automatically downloads, unzips, and runs the latest patch for Twister OS. It is fine if you run the patcher more than once as it auto detects your version.<br>
+An updater for Twister OS that automatically downloads, unzips, and runs the latest patch for Twister OS. It is fine if you run the patcher more than once as it auto detects your version. You have to run the patcher when you can reboot your computer as it is required for patching.<br>
 
 
 #### Go support Twister OS!</br>
@@ -13,7 +13,7 @@ An updater for Twister OS that automatically downloads, unzips, and runs the lat
 
 # Usage
 [![18-08-2020-08-02-21-REC.png](https://i.postimg.cc/cHq94jWb/18-08-2020-08-02-21-REC.png)](https://postimg.cc/DWgdxx8r)<br>
-Go in the applications menu and search for Twister OS Patcher in the system section. Click on it and a terminal window will open. Press enter to continue and the progran will check to see which version you are on and if you are on the latest version, it'll tell you you are and you can close it.
+Go in the applications menu and search for Twister OS Patcher in the system section. Click on it and a terminal window will open. If a window pops-up saying the file is untrusted, just click 'Mark Executable'. Press enter to continue and the progran will check to see which version you are on and if you are on the latest version, it'll tell you and you can close it with [Enter]. If you are on a old patch, it'll confirm your current version which you can check by typing `twistver`. If it is correct press [Enter] and it will automatically run the patch and reboot for you.
 
 # Automatically Patch
 We suggest doing the steps below 
