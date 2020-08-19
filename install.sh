@@ -16,6 +16,7 @@ mv arrow-white.png /home/pi/patcher/icons/arrow-white.png
 mv patch.sh /home/pi/patcher/patch.sh
 mv uninstall.sh /home/pi/patcher/uninstall.sh
 mv upgradepatcher.sh /home/pi/patcher/upgradepatcher.sh
+mv checkforupdates.sh /home/pi/patcher/checkforupdates.sh
 
 #Move patcher.desktop
 sudo chmod +x patcher.desktop
