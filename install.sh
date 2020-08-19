@@ -33,8 +33,8 @@ fi
 cd ~
 echo '#####Twister OS Patcher' >> .bashrc
 echo 'alias twistpatch="/home/pi/patcher/patch.sh"' >> .bashrc
-echo 'alias twistpatch upgrade="bash /home/pi/patcher/upgradepatcher.sh"' >> .bashrc
-echo 'alias twistpatch uninstall="bash /home/pi/patcher/uninstall.sh"' >> .bashrc
+echo 'alias twistpatch update="bash /home/pi/patcher/upgradepatcher.sh"' >> .bashrc
+echo 'alias twistpatch remove="bash /home/pi/patcher/uninstall.sh"' >> .bashrc
 cd Twister-OS-Patcher-master/
 
 #Remove useless folders and make all files executable
