@@ -36,12 +36,11 @@ sudo ln -s /home/pi/updater/patch.sh /usr/local/bin/twistpatch
 sudo ln -s /home/pi/updater/uninstall.sh /usr/local/bin/twistpatch-uninstall
 sudo ln -s /home/pi/updater/upgradepatcher.sh /usr/local/bin/twistpatch-update
 source ~/.bashrc
-cd Twister-OS-Patcher-master/
 
 #Remove useless folders and make all files executable
 cd ../
 rm -r Twister-OS-Patcher-master/
 rm master.zip
-cd /home/pi/patcher/
+cd ~/patcher/
 chmod +x *
 chmod +x upgradepatcher.sh
