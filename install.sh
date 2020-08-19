@@ -10,6 +10,7 @@ mkdir -p /home/pi/patcher/icons/
 mv twister-update.png /home/pi/patcher/icons/twister-update.png
 mv twister-update-blue.png /home/pi/patcher/icons/twister-update-blue.png
 mv twister-update-dark.png /home/pi/patcher/icons/twister-update-dark.png
+mv arrow-white.png /home/pi/patcher/icons/arrow-white.png
 
 #Move scripts into patcher folder
 mv patch.sh /home/pi/patcher/patch.sh
@@ -24,22 +25,20 @@ cp /home/pi/.local/share/applications/patcher.desktop /home/pi/Desktop
 # add new crontab for checking each sunday at midnight
 (crontab -l && echo "@weekly ~/patcher/checkforupdates.sh") | crontab -
 
+
 #Remove commands
 if [ ! -f "/usr/local/bin/twistpatch" ]; then
     sudo ln -s /home/pi/patcher/patch.sh /usr/local/bin/twistpatch
+    sudo chmod 755 /usr/local/bin/twistpatch
 fi
 if [ ! -f "/usr/local/bin/twistpatch-uninstall" ]; then
     sudo ln -s /home/pi/patcher/uninstall.sh /usr/local/bin/twistpatch-uninstall
+    sudo chmod 755 /usr/local/bin/twistpatch-uninstall
 fi
 if [ ! -f "/usr/local/bin/twistpatch-update" ]; then
     sudo ln -s /home/pi/patcher/upgradepatcher.sh /usr/local/bin/twistpatch-update
+    sudo chmod 755 /usr/local/bin/twistpatch-update
 fi
-
-#Install commands
-#sudo ln -s /home/pi/updater/patch.sh /usr/local/bin/twistpatch
-#sudo ln -s /home/pi/updater/uninstall.sh /usr/local/bin/twistpatch-uninstall
-#sudo ln -s /home/pi/updater/upgradepatcher.sh /usr/local/bin/twistpatch-update
-source ~/.bashrc
 
 #Remove useless folders and make all files executable
 cd ../
