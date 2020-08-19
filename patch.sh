@@ -1,6 +1,10 @@
 #!/bin/bash
 echo "Checking for and installing available Twister OS patches..."
 read -p "This application will now attempt to update Twister OS. When ready, press [Enter] to update, or press [CTRL+C] to close the patcher..."
+#Checks if install.sh exists
+if [ -f "~/Downloads/install.sh" ]; then
+    rm ~/Downloads/install.sh
+fi
 
 #Download the latest patchversion.sh and run it to determine your current version
 cd ~/patcher/
