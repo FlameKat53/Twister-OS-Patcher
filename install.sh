@@ -23,7 +23,7 @@ mv patcher.desktop /home/pi/.local/share/applications/patcher.desktop
 cp /home/pi/.local/share/applications/patcher.desktop /home/pi/Desktop
 
 # Add new crontab for checking each Monday at 11:00AM
-(crontab -l && echo "0 11 * * 2 ~/patcher/checkforupdates.sh") | crontab -
+(crontab -l && echo "0 11 * * 1 ~/patcher/checkforupdates.sh") | crontab -
 
 
 #Remove commands
