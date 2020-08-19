@@ -39,3 +39,4 @@ rm -r Twister-OS-Patcher-master/
 rm master.zip
 cd /home/pi/patcher/
 chmod +x *
+chmod +x upgradepatcher.sh
