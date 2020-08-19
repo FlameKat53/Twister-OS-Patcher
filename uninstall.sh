@@ -6,5 +6,8 @@ if [ -d ~/patcher/ ]; then
 fi
 if [ -f ~/.local/share/applications/patcher.desktop ]; then
   rm ~/.local/share/applications/patcher.desktop
+fi
+if [ -f ~/Desktop/patcher.desktop ]; then
   rm ~/Desktop/patcher.desktop
 fi
+echo 'Uninstalled.'
