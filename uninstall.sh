@@ -12,5 +12,5 @@ fi
 if [ -f /home/pi/Desktop/patcher.desktop ]; then
   rm /home/pi/Desktop/patcher.desktop
 fi
-crontab -l | sed "s/^@weekly ~/patcher/checkforupdates.sh/#&/" | crontab -
+crontab -l | sed "s/^\@weekly \~\/patcher\/checkforupdates.sh/#&/" | crontab -
 echo 'Uninstalled.'
