@@ -12,13 +12,13 @@ fi
 if [ -f /home/pi/Desktop/patcher.desktop ]; then
   rm /home/pi/Desktop/patcher.desktop
 fi
-if [ -f "/usr/local/bin/twistpatch" ]; then
+if [ -f /usr/local/bin/twistpatch ]; then
     sudo rm /usr/local/bin/twistpatch
 fi
-if [ -f "/usr/local/bin/twistpatch-uninstall" ]; then
+if [ -f /usr/local/bin/twistpatch-uninstall ]; then
     sudo rm /usr/local/bin/twistpatch-uninstall
 fi
-if [ -f "/usr/local/bin/twistpatch-update" ]; then
+if [ -f /usr/local/bin/twistpatch-update ]; then
     sudo rm /usr/local/bin/twistpatch-update
 fi
 crontab -l | sed "s/^\@weekly \~\/patcher\/checkforupdates.sh/#&/" | crontab -
