@@ -20,9 +20,6 @@ Go in the applications menu and search for Twister OS Patcher in the system sect
 We suggest doing the steps below 
 Run the following command to run the script once every week<br>
 `(crontab -l ; echo "0 10 * * 1 ~/patcher/patch.sh")| crontab -`<br>
-Do this to run the patcher on startup<br>
-Run `sudo nano /etc/rc.local` and add the following code BEFORE the line `exit 0` as seen in the image below<br>
-`bash ~/patcher/patch.sh &` 
 
 # Icon
 [![twister-update-blue.png](https://i.postimg.cc/tJy5MqsN/twister-update-blue.png)](https://postimg.cc/WFWgDP6d)<br>
@@ -46,9 +43,9 @@ Phoenixbyrd on Disocrd: Uploading files for us to the website<br>
 
 # Changes
 Dev phase
-- [x] Automatically update in order from current release to latest release
-- [x] Uninstall script
-Alpha/Beta
-- [ ] Make sure it works
-Official release
+- [x] Automatically update in order from current release to latest release<br>
+- [x] Uninstall script<br>
+Alpha/Beta<br>
+- [ ] Make sure it works<br>
+Official release<br>
 - [ ] Get program installed by default onto Twister OS
