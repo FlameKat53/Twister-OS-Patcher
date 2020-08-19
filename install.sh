@@ -30,10 +30,12 @@ fi
 (crontab -l && echo "@weekly ~/patcher/checkforupdates.sh") | crontab -
 
 #Add custom alias
-echo '#####Twister OS Patcher' >> /home/pi/.bashrc
-echo 'alias twistpatch="/home/pi/patcher/patch.sh"' >> /home/pi/.bashrc
-echo 'alias twistpatch upgrade="bash /home/pi/patcher/upgradepatcher.sh"' >> /home/pi/.bashrc
-echo 'alias twistpatch uninstall="bash /home/pi/patcher/uninstall.sh"' >> /home/pi/.bashrc
+cd ~
+echo '#####Twister OS Patcher' >> .bashrc
+echo 'alias twistpatch="/home/pi/patcher/patch.sh"' >> .bashrc
+echo 'alias twistpatch upgrade="bash /home/pi/patcher/upgradepatcher.sh"' >> .bashrc
+echo 'alias twistpatch uninstall="bash /home/pi/patcher/uninstall.sh"' >> .bashrc
+cd Twister-OS-Patcher-master/
 
 #Remove useless folders and make all files executable
 cd ../
