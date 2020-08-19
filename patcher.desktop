@@ -2,7 +2,7 @@
 Name=Twister OS Patcher
 Comment=Automatically patches TwisterOS to the latest version
 Exec=~/patcher/patch.sh
-Icon=~/patcher/icons/twister-update-dark.png
+Icon=/home/pi/patcher/icons/twister-update-dark.png
 Version=1.0
 Type=Application
 Categories=System
