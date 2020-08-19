@@ -30,14 +30,17 @@ cp /home/pi/.local/share/applications/patcher.desktop /home/pi/Desktop
 if [ ! -f "/usr/local/bin/twistpatch" ]; then
     sudo ln -s /home/pi/patcher/patch.sh /usr/local/bin/twistpatch
     sudo chmod 755 /usr/local/bin/twistpatch
+	sudo chown root:root /usr/local/bin/twistpatch
 fi
 if [ ! -f "/usr/local/bin/twistpatch-uninstall" ]; then
     sudo ln -s /home/pi/patcher/uninstall.sh /usr/local/bin/twistpatch-uninstall
     sudo chmod 755 /usr/local/bin/twistpatch-uninstall
+	sudo chown root:root /usr/local/bin/twistpatch-uninstall
 fi
 if [ ! -f "/usr/local/bin/twistpatch-update" ]; then
     sudo ln -s /home/pi/patcher/upgradepatcher.sh /usr/local/bin/twistpatch-update
     sudo chmod 755 /usr/local/bin/twistpatch-update
+	sudo chown root:root /usr/local/bin/twistpatch-update
 fi
 
 #Remove useless folders and make all files executable
