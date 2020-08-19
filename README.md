@@ -45,7 +45,9 @@ Phoenixbyrd on Disocrd: Uploading files for us to the website<br>
 Dev phase
 - [x] Automatically update in order from current release to latest release<br>
 - [x] Uninstall script
+
 Alpha/Beta
 - [ ] Make sure it works
+
 Official release
 - [ ] Get program installed by default onto Twister OS
