@@ -31,6 +31,12 @@ if [ ! -f "~/patcher/crontab.bak" ]; then
     crontab -l > ~/patcher/crontab.bak
 fi
 
+#Add custom alias
+echo '#####Twister OS Patcher' >> ~/.bashrc
+echo 'alias twistpatch="~/patcher/patch.sh"' >> ~/.bashrc
+echo 'alias twistpatch upgrade="bash ~/patcher/upgradepatcher.sh"' >> ~/.bashrc
+echo 'alias twistpatch uninstall="bash ~/patcher/uninstall.sh"' >> ~/.bashrc
+
 #Remove useless folders and make all files executable
 cd ../
 rm -r Twister-OS-Patcher-master/
