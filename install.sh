@@ -21,11 +21,6 @@ sudo chmod +x patcher.desktop
 mv patcher.desktop ~/.local/share/applications/patcher.desktop
 cp ~/.local/share/applications/patcher.desktop ~/Desktop
 
-#Checks if rc.bak exists before making it
-if [ ! -f "~/patcher/rc.bak" ]; then
-    cp /etc/rc.local ~/patcher/rc.bak
-fi
-
 #Checks if crontab.bak exists before making it
 if [ ! -f "~/patcher/crontab.bak" ]; then
     crontab -l > ~/patcher/crontab.bak
