@@ -6,38 +6,38 @@ unzip master.zip
 cd Twister-OS-Patcher-master/
 
 #Move pictures into icons folder
-mkdir -p ~/patcher/icons/
-mv twister-update.png ~/patcher/icons/twister-update.png
-mv twister-update-blue.png ~/patcher/icons/twister-update-blue.png
-mv twister-update-dark.png ~/patcher/icons/twister-update-dark.png
+mkdir -p /home/pi/patcher/icons/
+mv twister-update.png /home/pi/patcher/icons/twister-update.png
+mv twister-update-blue.png /home/pi/patcher/icons/twister-update-blue.png
+mv twister-update-dark.png /home/pi/patcher/icons/twister-update-dark.png
 
 #Move scripts into patcher folder
-mv patch.sh ~/patcher/patch.sh
-mv uninstall.sh ~/patcher/uninstall.sh
-mv upgradepatcher.sh ~/patcher/upgradepatcher.sh
+mv patch.sh /home/pi/patcher/patch.sh
+mv uninstall.sh /home/pi/patcher/uninstall.sh
+mv upgradepatcher.sh /home/pi/patcher/upgradepatcher.sh
 
 #Move patcher.desktop
 sudo chmod +x patcher.desktop
-mv patcher.desktop ~/.local/share/applications/patcher.desktop
-cp ~/.local/share/applications/patcher.desktop ~/Desktop
+mv patcher.desktop /home/pi/.local/share/applications/patcher.desktop
+cp /home/pi/.local/share/applications/patcher.desktop /home/pi/Desktop
 
 #Checks if crontab.bak exists before making it
-if [ ! -f "~/patcher/crontab.bak" ]; then
-    crontab -l > ~/patcher/crontab.bak
+if [ ! -f "/home/pi/patcher/crontab.bak" ]; then
+    crontab -l > /home/pi/patcher/crontab.bak
 fi
 
 # add new crontab for checking each sunday at midnight
-(crontab -l && echo "0 0 * * 0 ~/patcher/checkforupdates.sh") | crontab -
+(crontab -l && echo "0 0 * * 0 /home/pi/patcher/checkforupdates.sh") | crontab -
 
 #Add custom alias
-echo '#####Twister OS Patcher' >> ~/.bashrc
-echo 'alias twistpatch="~/patcher/patch.sh"' >> ~/.bashrc
-echo 'alias twistpatch upgrade="bash ~/patcher/upgradepatcher.sh"' >> ~/.bashrc
-echo 'alias twistpatch uninstall="bash ~/patcher/uninstall.sh"' >> ~/.bashrc
+echo '#####Twister OS Patcher' >> /home/pi/.bashrc
+echo 'alias twistpatch="/home/pi/patcher/patch.sh"' >> /home/pi/.bashrc
+echo 'alias twistpatch upgrade="bash /home/pi/patcher/upgradepatcher.sh"' >> /home/pi/.bashrc
+echo 'alias twistpatch uninstall="bash /home/pi/patcher/uninstall.sh"' >> /home/pi/.bashrc
 
 #Remove useless folders and make all files executable
 cd ../
 rm -r Twister-OS-Patcher-master/
 rm master.zip
-cd ~/patcher/
+cd /home/pi/patcher/
 chmod +x *
