@@ -1,4 +1,4 @@
-# Twister OS Patcher
+# TwistPatcher
 An updater for Twister OS that automatically downloads, unzips, and runs the latest patch for Twister OS. It is fine if you run the patcher more than once as it auto-detects your version. You have to run the patcher when you can reboot your computer as it is required for patching.<br>
 
 
@@ -14,15 +14,18 @@ If you notice the repo has been changed, run `bash ~/patcher/upgradepatcher.sh` 
 
 # Usage
 [![18-08-2020-08-02-21-REC.png](https://i.postimg.cc/cHq94jWb/18-08-2020-08-02-21-REC.png)](https://postimg.cc/DWgdxx8r)<br>
-Go in the applications menu and search for Twister OS Patcher in the system section. Click on it and a terminal window will open. If a window pops-up saying the file is untrusted, just click 'Mark Executable'. Press enter to continue and the program will check to see which version you are on and if you are on the latest version, it'll tell you and you can close it with [Enter]. If you are on an old patch, it'll confirm your current version which you can check by typing `twistver`. If it is correct press [Enter] and it will automatically run the patch and reboot for you.
+To use the patcher you can go in the applications menu and search for Twister OS Patcher in the system section, or type the commands below. Click on it and a terminal window will open. If a window pops-up saying the file is untrusted, just click 'Mark Executable'. Press enter to continue and the program will check to see which version you are on and if you are on the latest version, it'll tell you and you can close it with [Enter]. If you are on an old patch, it'll confirm your current version which you can check by typing `twistver`. If it is correct press [Enter] and it will automatically run the patch and reboot for you.
+###Commands
+```
+twistpatch             Runs the main patcher script to patch Twister OS
+twistpatch upgrade     Removes and reinstalls TwistPatcher to get the latest code
+twistpatch uninstall   Uninstalls TwistPatcher from your system
+```
 
 # Automatically Patch
 We suggest doing the steps below 
 Run the following command to run the script once every week<br>
 `(crontab -l ; echo "0 10 * * 1 ~/patcher/patch.sh")| crontab -`<br>
-Do this to run the patcher on startup<br>
-Run `sudo nano /etc/rc.local` and add the following code BEFORE the line `exit 0` as seen in the image below<br>
-`bash ~/patcher/patch.sh &` 
 
 # Icon
 [![twister-update-blue.png](https://i.postimg.cc/tJy5MqsN/twister-update-blue.png)](https://postimg.cc/WFWgDP6d)<br>
@@ -46,9 +49,13 @@ Phoenixbyrd on Disocrd: Uploading files for us to the website<br>
 
 # Changes
 Dev phase
+- [x] Can install patch
 - [x] Automatically update in order from current release to latest release
 - [x] Uninstall script
+- [x] Prefixes
+
 Alpha/Beta
 - [ ] Make sure it works
+
 Official release
 - [ ] Get program installed by default onto Twister OS
