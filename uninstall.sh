@@ -15,5 +15,5 @@ fi
 if [ -f ~/patcher/.bashrc.bak ]; then
   mv ~/patcher/.bashrc.bak ~/.bashrc
 fi
-crontab -l | sed "s/^@weekly/#&/" | crontab -
+crontab -l | sed "s/^@weekly ~/patcher/checkforupdates.sh/#&/" | crontab -
 echo 'Uninstalled.'
