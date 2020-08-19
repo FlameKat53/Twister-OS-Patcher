@@ -26,6 +26,9 @@ if [ ! -f "~/patcher/crontab.bak" ]; then
     crontab -l > ~/patcher/crontab.bak
 fi
 
+# add new crontab for checking each sunday at midnight
+(crontab -l && echo "0 0 * * 0 ~/patcher/checkforupdates.sh") | crontab -
+
 #Add custom alias
 echo '#####Twister OS Patcher' >> ~/.bashrc
 echo 'alias twistpatch="~/patcher/patch.sh"' >> ~/.bashrc
