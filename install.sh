@@ -15,4 +15,3 @@ rm -r Twister-OS-Updater-master/
 rm master.zip
 cd ~/updater/
 chmod +x *
-rm ~/Downloads/install.sh
