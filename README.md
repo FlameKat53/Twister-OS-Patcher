@@ -15,7 +15,7 @@ If you notice the repo has been changed, run `twistpatch-update` to update your 
 
 # Usage
 [![18-08-2020-08-02-21-REC.png](https://i.postimg.cc/cHq94jWb/18-08-2020-08-02-21-REC.png)](https://postimg.cc/DWgdxx8r)<br>
-To use the patcher you can go in the applications menu and search for Twister OS Patcher in the system section, or type the commands below. Click on it and a terminal window will open. If a window pops-up saying the file is untrusted, just click 'Mark Executable'. Press enter to continue and the program will check to see which version you are on and if you are on the latest version, it'll tell you and you can close it with [Enter]. If you are on an old patch, it'll confirm your current version which you can check by typing `twistver`. If it is correct press [Enter] and it will automatically run the patch and reboot for you.
+To use the patcher you can go in the applications menu and search for Twister OS Patcher in the system section, or type the commands below. Click on it and a terminal window will open. If a window pops-up saying the file is untrusted, just click 'Mark Executable'. Press enter to continue and the program will check to see which version you are on and if you are on the latest version, it'll tell you and you can close it with [Enter]. If you are on an old patch, it'll confirm your current version which you can check by typing `twistver`. If it is correct press [Enter] and it will automatically run the patch and reboot for you. Every Monday at 11:00AM, a script will be run to check your current version and send a notification if there is a patch you can install.
 
 ### Commands
 ```
