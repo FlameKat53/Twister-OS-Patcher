@@ -1,6 +1,7 @@
 echo 'Uninstalling Twister OS Patcher by FlameKat53 and MobileGamesMotionYT...'
 echo 'Thanks for using me! You can install me again at "https://bit.ly/patchtwist"'
 cd ~/
+
 #Checks to see if these files exist and replace or remove them
 if [ -d ~/patcher/ ]; then
   rm -r ~/patcher/
