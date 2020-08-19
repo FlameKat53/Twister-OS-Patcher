@@ -52,7 +52,7 @@ Dev phase
 - [x] Prefixes
 
 Alpha/Beta
-- [ ] Make sure it works
+- [x] Make sure it works
 
 Official release
 - [ ] Get program installed by default onto Twister OS
