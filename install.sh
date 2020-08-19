@@ -6,7 +6,7 @@ mkdir -p ~/patcher/icons/
 mv twister-update.png ~/patcher/icons/twister-update.png
 mv twister-update-blue.png ~/patcher/icons/twister-update-blue.png
 mv twister-update-dark.png ~/patcher/icons/twister-update-dark.png
-mv update.sh ~/patcher/update.sh
+mv patch.sh ~/patcher/patch.sh
 mv uninstall.sh ~/patcher/uninstall.sh
 mv patcher.desktop ~/.local/share/applications/patcher.desktop
 cp ~/.local/share/applications/patcher.desktop ~/Desktop
