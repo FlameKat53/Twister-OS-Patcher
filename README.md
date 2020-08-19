@@ -44,7 +44,11 @@ Grayduck: Icons and checkversion.sh script<br>
 Aquarirus on Discord: Landscape title art<br>
 Phoenixbyrd on Disocrd: Uploading files for us to the website<br>
 
-# To-do
+# Changes
+Dev phase
 - [x] Automatically update in order from current release to latest release
 - [x] Uninstall script
+Alpha/Beta
+- [ ] Make sure it works
+Offical release
 - [ ] Get program installed by default onto Twister OS
