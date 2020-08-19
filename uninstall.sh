@@ -12,14 +12,9 @@ fi
 if [ -f /home/pi/Desktop/patcher.desktop ]; then
   rm /home/pi/Desktop/patcher.desktop
 fi
-if [ -f /usr/local/bin/twistpatch ]; then
-    sudo rm -f /usr/local/bin/twistpatch
-fi
-if [ -f /usr/local/bin/twistpatch-uninstall ]; then
-    sudo rm -f /usr/local/bin/twistpatch-uninstall
-fi
-if [ -f /usr/local/bin/twistpatch-update ]; then
-    sudo rm -f /usr/local/bin/twistpatch-update
-fi
+sudo rm -f /usr/local/bin/twistpatch
+sudo rm -f /usr/local/bin/twistpatch-uninstall
+sudo rm -f /usr/local/bin/twistpatch-update
+
 crontab -l | sed "s/^\@weekly \~\/patcher\/checkforupdates.sh/#&/" | crontab -
 echo 'Uninstalled.'
