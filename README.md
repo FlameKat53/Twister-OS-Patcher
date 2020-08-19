@@ -20,8 +20,8 @@ To use the patcher you can go in the applications menu and search for Twister OS
 ### Commands
 ```
 twistpatch:           Runs the main patcher script to patch Twister OS
-twistpatch update:    Removes and reinstalls TwistPatcher to get the latest code
-twistpatch remove:    Uninstalls TwistPatcher from your system
+twistpatch-update:    Removes and reinstalls TwistPatcher to get the latest code
+twistpatch-remove:    Uninstalls TwistPatcher from your system
 ```
 
 # Icon
