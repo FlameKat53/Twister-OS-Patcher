@@ -20,7 +20,7 @@ Go in the applications menu and search for Twister OS Patcher in the system sect
 We suggest doing the steps below 
 Run the following command to run the script once every week<br>
 `sudo su`<br>
-`echo '0 0 * * 0 ~/patcher/patch.sh' >> /var/spool/cron/crontabs/pi && exit`<br>
+`echo '0 11 * * 1 ~/patcher/patch.sh' >> /var/spool/cron/crontabs/pi && exit`<br>
 Do this to run the patcher on startup<br>
 Run `sudo nano /etc/rc.local` and add the following code BEFORE the line `exit 0` as seen in the image below<br>
 `/home/pi/patcher/patch.sh &` 
