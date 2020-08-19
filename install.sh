@@ -21,9 +21,9 @@ sudo chmod +x patcher.desktop
 mv patcher.desktop /home/pi/.local/share/applications/patcher.desktop
 cp /home/pi/.local/share/applications/patcher.desktop /home/pi/Desktop
 
-#Checks if crontab.bak exists before making it
-if [ ! -f "/home/pi/patcher/crontab.bak" ]; then
-    crontab -l > /home/pi/patcher/crontab.bak
+#Checks if bashrc.bak exists before making it
+if [ ! -f "~/patcher/.bashrc.bak" ]; then
+    cp ~/.bashrc ~/patcher/.bashrc.bak
 fi
 
 # add new crontab for checking each sunday at midnight
