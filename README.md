@@ -32,7 +32,7 @@ Run the following command to run the script once every week<br>
 [![twister-update-blue.png](https://i.postimg.cc/6qNWSdHT/twister-update-blue.png)](https://postimg.cc/HcB1871C)<br>
 If the default icon for the application is a little too "dark" for you, then right-click on the application and select 'Edit application'. Then click on the icon and choose `twister-update-blue.png` or `twister-update.png` as seen in the images below. The icon will become the one shown above.<br>
 [![18-08-2020-12-08-17-REC.png](https://i.postimg.cc/mkVFbMwh/18-08-2020-12-08-17-REC.png)](https://postimg.cc/8fJC47xV)<br>
-[![18-08-2020-08-02-21-REC.png](https://i.postimg.cc/SNdSTYcN/18-08-2020-08-02-21-REC.png)](https://postimg.cc/QHBZVt6R)
+[![18-08-2020-08-02-21-REC.png](https://i.postimg.cc/NMvvfQRz/18-08-2020-08-02-21-REC.png)](https://postimg.cc/VSgVKQGq)
 
 # Support
 If you have any problems, make an issue in this repository or go to the Pi Labs discord to connect with us at https://discord.gg/ttxhYrX
