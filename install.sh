@@ -34,8 +34,8 @@ cp /home/pi/.local/share/applications/patcher.desktop /home/pi/Desktop
 echo 'alias upgrade="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"' >> .bashrc
 #"Alias"
 sudo ln -s /home/pi/updater/patch.sh /usr/local/bin/twistpatch
-sudo ln -s /home/pi/updater/uninstall.sh /usr/local/bin/twistpatch uninstall
-sudo ln -s /home/pi/updater/upgradepatcher.sh /usr/local/bin/twistpatch update
+sudo ln -s /home/pi/updater/uninstall.sh /usr/local/bin/twistpatch-uninstall
+sudo ln -s /home/pi/updater/upgradepatcher.sh /usr/local/bin/twistpatch-update
 source ~/.bashrc
 cd Twister-OS-Patcher-master/
 
