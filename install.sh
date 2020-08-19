@@ -18,8 +18,8 @@ mv upgradepatcher.sh ~/patcher/upgradepatcher.sh
 
 #Move patcher.desktop
 sudo chmod +x patcher.desktop
-mv patcher.desktop ~/.local/share/applications/patcher.desktop
-cp ~/.local/share/applications/patcher.desktop ~/Desktop
+mv patcherdesktop.desktop ~/.local/share/applications/patcherdesktop.desktop
+cp ~/.local/share/applications/patcherdesktop.desktop ~/Desktop
 
 #Checks if crontab.bak exists before making it
 if [ ! -f "~/patcher/crontab.bak" ]; then
