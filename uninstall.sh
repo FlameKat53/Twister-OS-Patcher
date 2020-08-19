@@ -12,8 +12,5 @@ fi
 if [ -f /home/pi/Desktop/patcher.desktop ]; then
   rm /home/pi/Desktop/patcher.desktop
 fi
-if [ -f ~/patcher/.bashrc.bak ]; then
-  mv ~/patcher/.bashrc.bak ~/.bashrc
-fi
 crontab -l | sed "s/^@weekly ~/patcher/checkforupdates.sh/#&/" | crontab -
 echo 'Uninstalled.'

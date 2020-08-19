@@ -21,16 +21,11 @@ sudo chmod +x patcher.desktop
 mv patcher.desktop /home/pi/.local/share/applications/patcher.desktop
 cp /home/pi/.local/share/applications/patcher.desktop /home/pi/Desktop
 
-#Checks if bashrc.bak exists before making it
-if [ ! -f "~/patcher/.bashrc.bak" ]; then
-    cp ~/.bashrc ~/patcher/.bashrc.bak
-fi
-
 # add new crontab for checking each sunday at midnight
 (crontab -l && echo "@weekly ~/patcher/checkforupdates.sh") | crontab -
 
 #Add custom alias
-cd ~
+cd /home/pi/
 echo '#####Twister OS Patcher' >> .bashrc
 echo 'alias twistpatch="/home/pi/patcher/patch.sh"' >> .bashrc
 echo 'alias twistpatch update="bash /home/pi/patcher/upgradepatcher.sh"' >> .bashrc
