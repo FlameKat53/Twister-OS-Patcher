@@ -1,4 +1,4 @@
-echo 'Uninstalling Twister OS Updater by FlameKat53 and MobileGamesMotionYT...'
+echo 'Uninstalling Twister OS Patcher by FlameKat53 and MobileGamesMotionYT...'
 echo 'Thanks for using me! You can install me again at "https://bit.ly/twistpatch"'
 cd ~/
 if [ -d ~/updater/ ]; then
