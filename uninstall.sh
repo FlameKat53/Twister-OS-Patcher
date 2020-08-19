@@ -15,5 +15,5 @@ fi
 sudo rm -f /usr/local/bin/twistpatch
 sudo rm -f /usr/local/bin/twistpatch-uninstall
 sudo rm -f /usr/local/bin/twistpatch-update
-crontab -l | sed -n '/@weekly \~\/patcher\/checkforupdates.sh/!p' | crontab -
+crontab -l | sed -n '/@weekly \~\0 11 * * 1 ~\/patcher\/checkforupdates.sh/!p' | crontab -
 echo 'Uninstalled.'
