@@ -25,13 +25,13 @@ cp /home/pi/.local/share/applications/patcher.desktop /home/pi/Desktop
 (crontab -l && echo "@weekly ~/patcher/checkforupdates.sh") | crontab -
 
 #Remove commands
-if [ -f "/usr/local/bin/twistpatch" ]; then
+if [ -e "/usr/local/bin/twistpatch" ]; then
     sudo rm /usr/local/bin/twistpatch
 fi
-if [ -f "/usr/local/bin/twistpatch-uninstall" ]; then
+if [ -e "/usr/local/bin/twistpatch-uninstall" ]; then
     sudo rm /usr/local/bin/twistpatch-uninstall
 fi
-if [ -f "/usr/local/bin/twistpatch-update" ]; then
+if [ -e "/usr/local/bin/twistpatch-update" ]; then
     sudo rm /usr/local/bin/twistpatch-update
 fi
 
