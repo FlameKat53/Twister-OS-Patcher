@@ -19,6 +19,7 @@ if [ -f "$FILE2" ]; then
 VERSIONLATEST=$(cat latest.txt)
 	rm -f *patchinstall.sh
 	checkVersion
+	clear
 	read -p "You are running the most current version. Press [Enter] to quit"
 else
 	read -p "You seem to be offline! Press [Enter] to quit"
