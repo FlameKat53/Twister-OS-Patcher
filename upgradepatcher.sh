@@ -1,5 +1,5 @@
 #Rename .desktop file
-cp ~/Desktop/patcher.desktop ~/Desktop/patcher.desktop.bak
+mv ~/Desktop/patcher.desktop ~/Desktop/patcher.desktop.bak
 
 #Uninstalls and reinstalls the patcher
 bash ~/patcher/uninstall.sh
