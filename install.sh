@@ -6,39 +6,39 @@ unzip master.zip
 cd Twister-OS-Patcher-master/
 
 #Move pictures into icons folder
-mkdir -p /home/pi/patcher/icons/
-mv twister-update.png /home/pi/patcher/icons/twister-update.png
-mv twister-update-blue.png /home/pi/patcher/icons/twister-update-blue.png
-mv twister-update-dark.png /home/pi/patcher/icons/twister-update-dark.png
-mv arrow-white.png /home/pi/patcher/icons/arrow-white.png
+mkdir -p ~/patcher/icons/
+mv twister-update.png ~/patcher/icons/twister-update.png
+mv twister-update-blue.png ~/patcher/icons/twister-update-blue.png
+mv twister-update-dark.png ~/patcher/icons/twister-update-dark.png
+mv arrow-white.png ~/patcher/icons/arrow-white.png
 
 #Move scripts into patcher folder
-mv patch.sh /home/pi/patcher/patch.sh
-mv uninstall.sh /home/pi/patcher/uninstall.sh
-mv upgradepatcher.sh /home/pi/patcher/upgradepatcher.sh
-mv checkforupdates.sh /home/pi/patcher/checkforupdates.sh
+mv patch.sh ~/patcher/patch.sh
+mv uninstall.sh ~/patcher/uninstall.sh
+mv upgradepatcher.sh ~/patcher/upgradepatcher.sh
+mv checkforupdates.sh ~/patcher/checkforupdates.sh
 
 #Move patcher.desktop
 sudo chmod +x patcher.desktop
-mv patcher.desktop /home/pi/.local/share/applications/patcher.desktop
-cp /home/pi/.local/share/applications/patcher.desktop /home/pi/Desktop/patcher.desktop
+mv patcher.desktop ~/.local/share/applications/patcher.desktop
+cp ~/.local/share/applications/patcher.desktop ~/Desktop/patcher.desktop
 
 # Add new crontab for checking each Monday at 11:00AM
-(crontab -l && echo "0 11 * * 1 /home/pi/patcher/checkforupdates.sh") | crontab -
+(crontab -l && echo "0 11 * * 1 ~/patcher/checkforupdates.sh") | crontab -
 
 #Remove commands
 if [ ! -f "/usr/local/bin/twistpatch" ]; then
-    sudo ln -s /home/pi/patcher/patch.sh /usr/local/bin/twistpatch
+    sudo ln -s ~/patcher/patch.sh /usr/local/bin/twistpatch
     sudo chmod 755 /usr/local/bin/twistpatch
 	
 fi
 if [ ! -f "/usr/local/bin/twistpatch-uninstall" ]; then
-    sudo ln -s /home/pi/patcher/uninstall.sh /usr/local/bin/twistpatch-uninstall
+    sudo ln -s ~/patcher/uninstall.sh /usr/local/bin/twistpatch-uninstall
     sudo chmod 755 /usr/local/bin/twistpatch-uninstall
 	 
 fi
 if [ ! -f "/usr/local/bin/twistpatch-update" ]; then
-    sudo ln -s /home/pi/patcher/upgradepatcher.sh /usr/local/bin/twistpatch-update
+    sudo ln -s ~/patcher/upgradepatcher.sh /usr/local/bin/twistpatch-update
     sudo chmod 755 /usr/local/bin/twistpatch-update
 	
 fi
@@ -47,5 +47,5 @@ fi
 cd ../
 rm -r Twister-OS-Patcher-master/
 rm master.zip
-cd /home/pi/patcher/
+cd ~/patcher/
 chmod +x *
