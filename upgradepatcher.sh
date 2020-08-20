@@ -1,6 +1,5 @@
 #Copy .desktop file and cron
-cp ~/Desktop/patcher.desktop ~/Pictures/patcher.desktop
-cp ~/Desktop/patcher.desktop ~/Pictures/patcher.desktop
+cp ~/Desktop/patcher.desktop ~/Desktop/patcher.desktop.bak
 
 #Uninstalls and reinstalls the patcher
 bash ~/patcher/uninstall.sh
@@ -10,11 +9,7 @@ wget https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/master/inst
 #Remove new desktop files
 rm ~/Desktop/patcher.desktop
 rm ~/.local/share/applications/patcher.desktop
-rm ~/Desktop/patcher.desktop
-rm ~/.local/share/applications/patcher.desktop
 
 #Replace with old one
-cp ~/Pictures/patcher.desktop ~/.local/share/applications/patcher.desktop
-mv ~/Pictures/patcher.desktop ~/Desktop/patcher.desktop 
-cp ~/Pictures/patcher.desktop ~/.local/share/applications/patcher.desktop
-mv ~/Pictures/patcher.desktop ~/Desktop/patcher.desktop
+cp ~/Desktop/patcher.desktop.bak ~/.local/share/applications/patcher.desktop
+mv ~/Desktop/patcher.desktop.bak ~/Desktop/patcher.desktop
