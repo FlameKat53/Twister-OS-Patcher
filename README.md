@@ -26,7 +26,7 @@ twistpatch-remove:    Uninstalls TwistPatcher from your system
 
 # Icon
 [![twister-update-blue.png](https://i.postimg.cc/6qNWSdHT/twister-update-blue.png)](https://postimg.cc/HcB1871C)  [![twister-update.png](https://i.postimg.cc/zfgjCcfs/twister-update.png)](https://postimg.cc/xk9MYgM5)<br>
-If you don't like the default icon, then right-click on the application and select 'Edit application'. Then click on either one of the two other icons which are displayed above.<br>
+If you don't like the default icon, then right-click on the application and select 'Edit application' for the application menu. For the desktop application, right clikc and select "Edit launcher". Then click on either one of the two other icons which are displayed above.<br>
 [![18-08-2020-12-08-17-REC.png](https://i.postimg.cc/mkVFbMwh/18-08-2020-12-08-17-REC.png)](https://postimg.cc/8fJC47xV)<br>
 [![18-08-2020-12-08-49-REC.png](https://i.postimg.cc/MZYBb2Sx/18-08-2020-12-08-49-REC.png)](https://postimg.cc/pypyRSr1)
 
