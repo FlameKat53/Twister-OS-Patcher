@@ -29,17 +29,17 @@ cp ~/.local/share/applications/patcher.desktop ~/Desktop/patcher.desktop
 (crontab -l && echo "0 11 * * 1 ~/patcher/checkforupdates.sh") | crontab -
 
 #Adds commands
-if [ ! -e "/usr/local/bin/twistpatch" ]; then
+if [ ! -f "/usr/local/bin/twistpatch" ]; then
     sudo ln -s ~/patcher/patch.sh /usr/local/bin/twistpatch
     sudo chmod 755 /usr/local/bin/twistpatch
 	
 fi
-if [ ! -e "/usr/local/bin/twistpatch-uninstall" ]; then
+if [ ! -f "/usr/local/bin/twistpatch-uninstall" ]; then
     sudo ln -s ~/patcher/uninstall.sh /usr/local/bin/twistpatch-uninstall
     sudo chmod 755 /usr/local/bin/twistpatch-uninstall
 	 
 fi
-if [ ! -e "/usr/local/bin/twistpatch-update" ]; then
+if [ ! -f "/usr/local/bin/twistpatch-update" ]; then
     sudo ln -s ~/patcher/upgradepatcher.sh /usr/local/bin/twistpatch-update
     sudo chmod 755 /usr/local/bin/twistpatch-update
 	
