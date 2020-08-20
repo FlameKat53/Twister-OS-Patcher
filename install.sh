@@ -28,7 +28,7 @@ cp ~/.local/share/applications/patcher.desktop ~/Desktop/patcher.desktop
 # Add new crontab for checking each Monday at 11:00AM
 (crontab -l && echo "0 11 * * 1 ~/patcher/checkforupdates.sh") | crontab -
 
-#Remove commands
+#Adds commands
 if [ ! -e "/usr/local/bin/twistpatch" ]; then
     sudo ln -s ~/patcher/patch.sh /usr/local/bin/twistpatch
     sudo chmod 755 /usr/local/bin/twistpatch
