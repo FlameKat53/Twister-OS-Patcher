@@ -55,4 +55,4 @@ Alpha/Beta
 - [x] Make sure it works
 
 Official release
-- [ ] Get program installed by default onto Twister OS
+- [x] Get program installed by default onto Twister OS
