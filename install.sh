@@ -17,6 +17,8 @@ mv patch.sh ~/patcher/patch.sh
 mv uninstall.sh ~/patcher/uninstall.sh
 mv upgradepatcher.sh ~/patcher/upgradepatcher.sh
 mv checkforupdates.sh ~/patcher/checkforupdates.sh
+mv notify-send.sh ~/patcher/notify-send.sh
+mv notify-action.sh ~/patcher/notify-action.sh
 
 #Move patcher.desktop
 sudo chmod +x patcher.desktop
