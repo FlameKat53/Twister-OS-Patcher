@@ -1,6 +1,8 @@
+#!/bin/bash
+cd ~/patcher/
 VERSIONCURRENT=$(twistver)
 WEBVERSION=$(curl https://twisteros.com/Patches/latest.txt)
 
 if [ "$VERSIONCURRENT" != "$WEBVERSION" ]; then
-    notify-send --urgency=normal --app-name=Twister-OS-Patcher --icon=/home/pi/patcher/icons/arrow-white.png 'New update available. Run "twistpatch" to update.'
+    notify-send.sh --urgency=normal --app-name=twistpatch --icon=/home/pi/patcher/icons/arrow-white.png --action=Update:twistpatch $WEBVERSION 'is now avaliable, click "Update" to update'
 fi
