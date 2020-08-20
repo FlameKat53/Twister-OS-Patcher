@@ -39,7 +39,7 @@ This patcher has been featured in the following places:
 
 # Credits
 FlameKat53: patch.sh and patcher.desktop files<br>
-[mobilegmYT](https://github.com/mobilegmYT): The idea of an automatic patcher, install.sh and README<br>
+[mobilegmYT](https://github.com/mobilegmYT)/[Raspberry Pi News](https://www.youtube.com/channel/UCmp6JswV90SV5agNFGQuWkw): The idea of an automatic patcher, install.sh and README<br>
 Grayduck on Discord: Icons and checkversion.sh script<br>
 [phoenixbyrd](https://github.com/phoenixbyrd): Uploading files for us to the website<br>
 [kreal](https://github.com/krishenriksen): checkforupdates.sh, modifying install.sh
