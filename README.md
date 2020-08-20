@@ -15,7 +15,7 @@ If you notice the repo has been changed, run `twistpatch-update` to update your 
 
 # Usage
 [![18-08-2020-08-02-21-REC.png](https://i.postimg.cc/cHq94jWb/18-08-2020-08-02-21-REC.png)](https://postimg.cc/DWgdxx8r)<br>
-To use the patcher you can go in the applications menu and search for Twister OS Patcher in the system section, or type the commands below. Click on it and a terminal window will open. If a window pops-up saying the file is untrusted, just click 'Mark Executable'. Press enter to continue and the program will check to see which version you are on and if you are on the latest version, it'll tell you and you can close it with [Enter]. If you are on an old patch, it'll confirm your current version which you can check by typing `twistver`. If it is correct press [Enter] and it will automatically run the patch and reboot for you. Every Sunday at 11:00AM, a notification will be sent if there is a patch you can install.
+There are 3 ways to open the patcher. Firstly, you can click on the "Twister OS Patcher" in your desktop and applications menu. Secondly, you can type "twistpatch" into terminal. Lastly, you can install [MacOS Notification Center](https://github.com/krishenriksen/notificationcenter), open it, and click "Patch Twister OS to the latest version". Once you open the patcher, make sure nothing important is running so you can reboot. Click [Enter] and it'll ask you to confirm your version. It it's correct press [enter] and either it'll say you're on the latest version or start downloading patches.
 
 ### Commands
 ```
@@ -35,7 +35,6 @@ If you have any problems, make an issue in this repository or go to the Pi Labs 
 
 # Demonstration
 This patcher has been featured in the following places:
-
 
 # Credits
 [FlameKat53](https://github.com/FlameKat53): Main patch.sh and logic behind automatic patching. Started developing the code first.<br>
