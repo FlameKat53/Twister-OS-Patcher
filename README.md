@@ -1,5 +1,5 @@
 # TwistPatcher
-[![tos-patcher-new2.png](https://i.postimg.cc/rwTFyXLs/tos-patcher-new2.png)<br>
+![](https://i.postimg.cc/rwTFyXLs/tos-patcher-new2.png)<br>
 An updater for Twister OS that automatically downloads, unzips, and runs the latest patch for Twister OS. It is fine if you run the patcher more than once as it auto-detects your version. You have to run the patcher when you can reboot your computer as it is required for patching.<br>
 
 
