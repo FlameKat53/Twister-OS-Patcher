@@ -15,7 +15,7 @@ If you notice the repo has been changed, run `twistpatch-update` to update your 
 
 # Usage
 [![18-08-2020-08-02-21-REC.png](https://i.postimg.cc/cHq94jWb/18-08-2020-08-02-21-REC.png)](https://postimg.cc/DWgdxx8r)<br>
-There are 3 ways to open the patcher. Firstly, you can click on the "Twister OS Patcher" in your desktop and applications menu. Secondly, you can type "twistpatch" into terminal. Lastly, you can install [MacOS Notification Center](https://github.com/krishenriksen/notificationcenter), open it, and click "Patch Twister OS to the latest version". Once you open the patcher, make sure nothing important is running so you can reboot. Click [Enter] and it'll ask you to confirm your version. It it's correct press [enter] and either it'll say you're on the latest version or start downloading patches.
+There are 3 ways to open the patcher. Firstly, you can click on the "Twister OS Patcher" in your desktop and applications menu. Secondly, you can type "twistpatch" into terminal. Lastly, you can install [MacOS Notification Center](https://github.com/krishenriksen/notificationcenter), open it, and click "Patch Twister OS to the latest version". Once you open the patcher, make sure nothing important is running so you can reboot. Once it is open wait about 5 seconds to download the latest scripts and then  either it'll start downloading patches and rebooting, say you're on the latest patch and exit, or say you're offline and exit. If you have missed out on more than 1 patch, then you'll have to run it again until you get to the latest version because this is WHAT YOU GET for not updating.
 
 ### Commands
 ```
