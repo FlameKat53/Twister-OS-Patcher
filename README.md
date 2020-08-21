@@ -34,7 +34,8 @@ If you don't like the default icon, then right-click on the application and sele
 If you have any problems, make an issue in this repository or go to the Pi Labs discord to connect with us at https://discord.gg/ttxhYrX
 
 # Demonstration
-This patcher has been featured in the following places:
+This patcher has been featured by the following people:
+[leepsvideo on Youtube](https://www.youtube.com/watch?v=EP1KWsvT4ME)
 
 # Credits
 [FlameKat53](https://github.com/FlameKat53): Main patch.sh and logic behind automatic patching. Started developing the code first.<br>
