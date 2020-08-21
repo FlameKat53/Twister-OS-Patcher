@@ -1,3 +1,4 @@
+#!/bin/bash
 #Rename .desktop file
 mv ~/Desktop/patcher.desktop ~/Desktop/patcher.desktop.bak
 
