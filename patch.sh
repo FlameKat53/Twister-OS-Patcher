@@ -25,6 +25,6 @@ VERSIONLATEST=$(cat latest.txt)
 	sleep 5s
 else
 	clear
-	echo "You seem to be offline!"
+	echo "You seem to be offline! Press [Enter] to exit"
 	sleep 5s
 fi
