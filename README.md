@@ -14,7 +14,7 @@ If you notice the repo has been changed, run `twistpatch-update` to update your 
 `twistpatch-remove`
 
 # Usage
-[![18-08-2020-08-02-21-REC.png](https://i.postimg.cc/cHq94jWb/18-08-2020-08-02-21-REC.png)<br>
+![18-08-2020-08-02-21-REC.png](https://i.postimg.cc/cHq94jWb/18-08-2020-08-02-21-REC.png)<br>
 There are 3 ways to open the patcher. Firstly, you can click on the "Twister OS Patcher" in your desktop and applications menu. Secondly, you can type "twistpatch" into terminal. Lastly, you can install [MacOS Notification Center](https://github.com/krishenriksen/notificationcenter), open it, and click "Patch Twister OS to the latest version". Once you open the patcher, make sure nothing important is running so you can reboot. Once it is open wait about 5 seconds to download the latest scripts and then  either it'll start downloading patches and rebooting, say you're on the latest patch and exit, or say you're offline and exit. If you have missed out on more than 1 patch, then you'll have to run it again until you get to the latest version because this is WHAT YOU GET for not updating.
 
 ### Commands
@@ -25,7 +25,7 @@ twistpatch-remove:    Uninstalls TwistPatcher from your system
 ```
 
 # Icon
-[![twister-update-blue.png](https://i.postimg.cc/6qNWSdHT/twister-update-blue.png)](https://postimg.cc/HcB1871C)  [![twister-update.png](https://i.postimg.cc/zfgjCcfs/twister-update.png)](https://postimg.cc/xk9MYgM5)<br>
+![twister-update-blue.png](https://i.postimg.cc/6qNWSdHT/twister-update-blue.png)](https://postimg.cc/HcB1871C)  [![twister-update.png](https://i.postimg.cc/zfgjCcfs/twister-update.png)](https://postimg.cc/xk9MYgM5)<br>
 If you don't like the default icon, then right-click on the application and select 'Edit application' for the application menu. For the desktop application, right clikc and select "Edit launcher". Then click on either one of the two other icons which are displayed above.<br>
 [![18-08-2020-12-08-17-REC.png](https://i.postimg.cc/mkVFbMwh/18-08-2020-12-08-17-REC.png)](https://postimg.cc/8fJC47xV)<br>
 [![18-08-2020-12-08-49-REC.png](https://i.postimg.cc/MZYBb2Sx/18-08-2020-12-08-49-REC.png)](https://postimg.cc/pypyRSr1)
