@@ -39,10 +39,10 @@ This patcher has been featured by the following people:
 
 # Credits
 [FlameKat53](https://github.com/FlameKat53): Main patch.sh and logic behind automatic patching. Started developing the code first.<br>
-[mobilegmYT](https://github.com/mobilegmYT)/[Raspberry Pi News](https://www.youtube.com/channel/UCmp6JswV90SV5agNFGQuWkw): The idea of an automatic patcher, install.sh and various other pieces of code.<br>
+[Raspberry Pi News](https://www.youtube.com/channel/UCmp6JswV90SV5agNFGQuWkw): The idea of an automatic patcher, install.sh and various other pieces of code.<br>
 [grayduck](https://www.youtube.com/channel/UCgfQjdc5RceRlTGfuthBs7g): Lending us his bash expertise and all graphics in this patcher.<br>
 [phoenixbyrd](https://github.com/phoenixbyrd): Uploading files for us to the website.<br>
-[kreal](https://github.com/krishenriksen): making checkforupdates.sh, modifying install.sh, and cron code.
+[kreal](https://github.com/krishenriksen): making checkforupdates.sh, modifying install.sh, and cron code.<br>
 [vlevit](https://github.com/vlevit/): https://github.com/vlevit/notify-send.sh
 
 # Changes
