@@ -1,7 +1,6 @@
 #!/bin/bash
-echo "Checking for and installing available Twister OS patches..."
-echo "Update will install in 5 seconds, press Ctrl-C to cancel"
-sleep 5s
+echo "Checking for and installing available Twister OS patches... Press Ctrl-C to cancel"
+sleep 4s
 
 #Download the latest patchversion.sh and run it to determine your current version
 cd ~/patcher/
@@ -21,10 +20,10 @@ VERSIONLATEST=$(cat latest.txt)
 	rm -f *patchinstall.sh
 	checkVersion
 	clear
-	echo "You are running the most current version. Press [Enter] to exit"
-	sleep 5s
+	echo "You are running the most current version."
+	sleep 3s
 else
 	clear
-	echo "You seem to be offline! Press [Enter] to exit"
-	sleep 5s
+	echo "You seem to be offline!"
+	sleep 3s
 fi
