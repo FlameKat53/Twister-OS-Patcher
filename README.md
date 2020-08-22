@@ -34,7 +34,8 @@ If you don't like the default icon, then right-click on the application and sele
 If you have any problems, make an issue in this repository or go to the Pi Labs discord to connect with us at https://discord.gg/ttxhYrX
 
 # Demonstration
-This patcher has been featured by the following people:
+This patcher has been featured in these places:
+[Raspberry Pi News](https://youtu.be/bTTF0VT_ClM)
 [leepsvideo on Youtube](https://www.youtube.com/watch?v=EP1KWsvT4ME)
 
 # Credits
