@@ -22,7 +22,7 @@ VERSIONLATEST=$(cat latest.txt)
 	checkVersion
 	clear
 	echo "You are running the most current version of " $VERSIONLATEST ". Exiting..."
-	sleep 3s
+	sleep 2.5s
 else
 	clear
 	echo "You seem to be offline! Exiting..."
