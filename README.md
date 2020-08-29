@@ -31,7 +31,7 @@ If you don't like the default icon, then right-click on the application and sele
 [![18-08-2020-12-08-49-REC.png](https://i.postimg.cc/MZYBb2Sx/18-08-2020-12-08-49-REC.png)](https://postimg.cc/pypyRSr1)
 
 # Support
-If you have any problems, make an issue in this repository or go to the Pi Labs discord to connect with us at https://discord.gg/ttxhYrX
+We have tested the code extensively, but mistakes do happen. If you have any problems, make an issue in this repository or go to the Pi Labs discord to connect with us at https://discord.gg/ttxhYrX
 
 # Demonstration
 This patcher has been featured in these places:
@@ -57,4 +57,4 @@ Alpha/Beta
 - [x] Make sure it works
 
 Official release
-- [x] Release program to public
+- [x] Release program to public and inclusion in patch 1.6
