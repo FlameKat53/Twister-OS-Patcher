@@ -26,7 +26,7 @@ mv patcher.desktop ~/.local/share/applications/patcher.desktop
 cp ~/.local/share/applications/patcher.desktop ~/Desktop/patcher.desktop
 
 # Add new crontab for checking each Monday at 11:00AM
-(crontab -l && echo "* * * * * bash /home/pi/patcher/checkforupdates.sh") | crontab -
+(sudo crontab -l && echo "* * * * * bash /home/pi/patcher/checkforupdates.sh") | sudo crontab -
 
 #Adds commands
 if [ ! -f "/usr/local/bin/twistpatch" ]; then
