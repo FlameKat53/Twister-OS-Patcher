@@ -51,3 +51,4 @@ rm -r Twister-OS-Patcher-master/
 rm master.zip
 cd ~/patcher/
 chmod +x *
+chmod +x checkforupdates.sh
