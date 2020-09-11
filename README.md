@@ -34,8 +34,8 @@ If you don't like the default icon, then right-click on the application and sele
 We have tested the code extensively, but mistakes do happen. If you have any problems, make an issue in this repository or go to the Pi Labs discord to connect with us at https://discord.gg/ttxhYrX
 
 # Demonstration
-This patcher has been featured in these places:
-[Raspberry Pi News](https://youtu.be/bTTF0VT_ClM)
+This patcher has been featured in these places:<br>
+[Raspberry Pi News](https://youtu.be/bTTF0VT_ClM)<br>
 [leepsvideo on Youtube](https://www.youtube.com/watch?v=EP1KWsvT4ME)
 
 # Credits
@@ -58,3 +58,6 @@ Alpha/Beta
 
 Official release
 - [x] Release program to public and inclusion in patch 1.6
+
+Bugs
+- [] Notifications not showing
