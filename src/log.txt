@@ -7,7 +7,3 @@ Frame
 Button
 Frame
 Label
-It works bc it's same version!
-Version Alpha 14
-
-app_version = "Version Alpha 14\n"

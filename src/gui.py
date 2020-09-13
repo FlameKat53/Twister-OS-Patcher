@@ -86,15 +86,9 @@ class About_Window:
 		
 		separator2 = ttk.Separator(mainframe, orient='horizontal')
 		separator2.pack(fill=X, expand=True, pady=15)
-		
-		update_button = Button(mainframe, text="Check for patcher updates", command=lambda:update_x(), cursor="hand2", font=("TkDefaultFont", 11, "bold"))
-		update_button.pack()
 
 		color_buton = Button(mainframe, text="Change theme color", command=lambda:change_theme(master), cursor="hand2", font=("TkDefaultFont", 11, "bold"))
 		color_buton.pack()
-
-		def update_x():
-			up.update_cpi()
 
 		bind_label = tk.Label( mainframe, text="Press [Esc] to close", font=("TkDefaultFont", 11, "bold") )
 		bind_label.pack(side=BOTTOM)
@@ -158,11 +152,11 @@ class Window:
 
 		photo1 = PhotoImage(file = home_path+"/patcher/src/icons/update.png") 
 
-		update_button = Button ( content_frame, text="Update Twister OS", command = lambda:up.update_twist(), width=180, height=200, cursor="hand2", image = photo1, compound=TOP)
+		update_button = Button( content_frame, text="Update Twister OS", command = lambda:up.update_twist(), width=180, height=200, cursor="hand2", image = photo1, compound=TOP)
 		update_button.grid(row=0, column=0, padx=0)
 		update_button.pack(side=BOTTOM, pady=5)
 
-		btn = Button( mainframe, text="About/Update the Patcher", command = lambda:change_frame(), font=("TkDefaultFont", 11, "bold"), cursor="hand2")
+		btn = Button( mainframe, text="About", command = lambda:change_frame(), font=("TkDefaultFont", 11, "bold"), cursor="hand2")
 		btn.pack(side=BOTTOM, pady=5)
 
 		
@@ -180,12 +174,7 @@ class Window:
 		
 		version_label = tk.Label( content_frame2, text=rs.get_app_version(), font=("TkDefaultFont", 11, "bold"), justify=CENTER)
 		version_label.pack()
-		
-		link = tk.Label( content_frame2, text="Changelog", cursor="hand2", fg="#1D81DA", pady=5)
-		link.pack(fill=X)
-		mlink = 'https://github.com/FlameKat53/Twister-OS-Patcher/blob/master/CHANGELOG.md'
-		link.bind("<Button-1>", lambda e: rs.cpi_open_url(mlink))
-		
+
 		def change_frame():
 			if content_frame.hidden == 0:
 				content_frame.pack_forget()
@@ -204,7 +193,7 @@ class Window:
 		master.protocol("WM_DELETE_WINDOW", lambda:on_Window_Close(master))
 
 		th.set_theme(master)
-		if up.check_update() == "killApp":
-			lambda e:killwindow(e, master)
-			
+		if up.check_online() == False:
+			crash.app()
+
 		master.mainloop()
