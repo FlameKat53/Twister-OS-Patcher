@@ -21,7 +21,7 @@ VERSIONLATEST=$(cat latest.txt)
 	rm -f *patchinstall.sh
 	checkVersion
 	clear
-	echo "You are running the most current version of " $VERSIONLATEST ". Exiting..."
+	echo "You are running the most current version, " $VERSIONLATEST ". Exiting..."
 	sleep 2.5s
 
 else
