@@ -42,49 +42,9 @@ def killwindow(event, master):
 
 ### Open new window with it's own master
 def bopen(window):
-	x = window()			
-
-class Proc_Info_Window:
-
-	def __init__(master):
-	
-		master = tk.Tk()
-		master.geometry("350x400")
-		master.title("TwistPatch")
-		th.window_list.append(master)
-		th.set_theme(master)
-		mainframe = Frame(master)
-		mainframe.pack(padx=10, pady=10)	
-		
-		titleframe = Frame(mainframe)
-		titleframe.pack(fill=X)
-				
-		image = Image.open(home_path+"/patcher/src/icons/update.png")
-		photo = ImageTk.PhotoImage(image, master=titleframe) 
-
-		title_label = tk.Label( titleframe, text = "Update Twister OS", font=("TkDefaultFont", 18, "bold"), image = photo, compound=LEFT, anchor='w')
-		title_label.image = photo
-		title_label.pack(side=BOTTOM)
-		title_labell = Button(mainframe, text="Check for updates", command=lambda:up.update_twist(), cursor="hand2", font=("TkDefaultFont", 11, "bold"))
-		title_labell.pack()
-
-		def update_ou():
-			up.update_twister()
-	
-		separator = ttk.Separator(mainframe, orient='horizontal')
-		separator.pack(fill=X, expand=True, pady=15)
-		
-		separator2 = ttk.Separator(mainframe, orient='horizontal')
-		separator2.pack(fill=X, expand=True, pady=15)	
-		
-		bind_label = tk.Label( mainframe, text="Press [Esc] to close", font=("TkDefaultFont", 11, "bold") )
-		bind_label.pack(side=BOTTOM)
-		master.bind('<Escape>', lambda e:killwindow(e, master))
-		master.protocol("WM_DELETE_WINDOW", lambda:on_Window_Close(master))	
-		master.mainloop()
+	x = window()		
 
 class About_Window:
-
 	def __init__(master):
 	
 		master = tk.Tk()
@@ -136,7 +96,6 @@ class About_Window:
 		def update_x():
 			up.update_cpi()
 
-		
 		bind_label = tk.Label( mainframe, text="Press [Esc] to close", font=("TkDefaultFont", 11, "bold") )
 		bind_label.pack(side=BOTTOM)
 		master.bind('<Escape>', lambda e:killwindow(e, master))
@@ -149,61 +108,101 @@ class Window:
 	def __init__(master):
 
 		master = tk.Tk()
-		master.geometry("420x500")
+		
+		width = master.winfo_screenwidth()
+		height = master.winfo_screenheight()
+		
+		xw = int(width)/2-210
+		xw = int(xw)
+		xh = int(height)/2-250
+		xh = int(xh)
+		
+		xsize = "420x500+"+str(xw)+"+"+str(xh)
+		master.attributes('-type','dock')
+		master.geometry(xsize)
+		
 		master.title("TwistPatch")
 		master.resizable(False, False)
+		master.focus_force()
 		th.window_list.append(master)
 		mainframe = Frame(master)
 		mainframe.pack(padx=10, pady=10)
-		
-		
 		titleframe = Frame(mainframe)
 		titleframe.pack()
-		
+
 		loadimg = Image.open(home_path+"/patcher/src/icons/title_logo.png")
 		img = ImageTk.PhotoImage(image=loadimg)
 
 		img_label = tk.Label ( titleframe, image=img)
 		img_label.image = img
 		img_label.grid(row=0, column=0, columnspan=2)
-		
-		#title_label = tk.Label( titleframe, text = "TwistPatch", font=("TkDefaultFont", 22, "bold") )
-		#title_label.grid(row=0, column=1)
-		
+
 		separator = ttk.Separator(mainframe, orient='horizontal')
 		separator.pack(fill=X, expand=True, pady=10)
-		
+
 		infoframe = Frame(mainframe)
 		infoframe.pack(fill=X)
-		
+
 		twistver = tk.Label( infoframe, text= rs.twistver, fg="red", anchor='w')
 		twistver.grid(row=1, column=0, columnspan=2, sticky=W)
-		
+
 		separator2 = ttk.Separator(mainframe, orient='horizontal')
 		separator2.pack(fill=X, expand=True, pady=10)
 
-		#REFRESH CPU USAGE, MEMORY USAGE AND TEMPERATURE
-		def refresh():
-			master.after(1000, refresh)
-			
-		refresh()
+
+
+		content_frame = Frame(mainframe)
+		content_frame.hidden = 0
+		content_frame.pack(fill=X)
 		
-		btn_frame = Frame(mainframe)
-		btn_frame.pack(fill=X)
-		
+
 		photo1 = PhotoImage(file = home_path+"/patcher/src/icons/update.png") 
-		#photoimage1 = photo1.subsample(15, 15) 
+
+		update_button = Button ( content_frame, text="Update Twister OS", command = lambda:up.update_twist(), width=180, height=200, cursor="hand2", image = photo1, compound=TOP)
+		update_button.grid(row=0, column=0, padx=0)
+		update_button.pack(side=BOTTOM, pady=5)
+
+		btn = Button( mainframe, text="About/Update the Patcher", command = lambda:change_frame(), font=("TkDefaultFont", 11, "bold"), cursor="hand2")
+		btn.pack(side=BOTTOM, pady=5)
+
 		
-		proc_info_button = Button ( btn_frame, text="Update Twister OS", command = lambda:bopen(Proc_Info_Window), width=180, height=200, cursor="hand2", image = photo1, compound=TOP)
-		proc_info_button.grid(row=0, column=0, padx=0)
-		proc_info_button.pack(side=BOTTOM, pady=5)
 		
-		btn3 = Button( mainframe, text="About/Update the Patcher", command = lambda:bopen(About_Window), font=("TkDefaultFont", 11, "bold"), cursor="hand2")
-		btn3.pack(side=BOTTOM, pady=5)
+		content_frame2 = Frame(mainframe)
+		#content_frame2.hidden = 1
+		#content_frame2.pack()
+
 		
-		#d = Info_Window()
+		about_label = tk.Label( content_frame2, text = "TwistPatch, Commander Pi 2020\n", justify=CENTER, font=("TkDefaultFont", 11, "bold"))
+		about_label.pack()
+		
+		text_label = tk.Label( content_frame2, text="By Jack477\nFor Twister OS\n\nGraphic elements by grayduck\nApp idea by Salva\nTwistPatch (Python3 edition) coded by setLillie", justify=CENTER)
+		text_label.pack(fill=X)
+		
+		version_label = tk.Label( content_frame2, text=rs.get_app_version(), font=("TkDefaultFont", 11, "bold"), justify=CENTER)
+		version_label.pack()
+		
+		link = tk.Label( content_frame2, text="Changelog", cursor="hand2", fg="#1D81DA", pady=5)
+		link.pack(fill=X)
+		mlink = 'https://github.com/FlameKat53/Twister-OS-Patcher/blob/master/CHANGELOG.md'
+		link.bind("<Button-1>", lambda e: rs.cpi_open_url(mlink))
+		
+		def change_frame():
+			if content_frame.hidden == 0:
+				content_frame.pack_forget()
+				content_frame2.pack()
+				btn['text'] = 'Back to main window'
+				content_frame.hidden = 1
+			else:
+				content_frame.pack()
+				content_frame2.pack_forget()
+				btn['text'] = 'About/Update the Patcher'
+				content_frame.hidden = 0
+			
+		bind_label = tk.Label( mainframe, text="Press [Esc] to close", font=("TkDefaultFont", 11, "bold" ))
+		bind_label.pack(side=BOTTOM)
+		master.bind('<Escape>', lambda e:killwindow(e, master))
 		master.protocol("WM_DELETE_WINDOW", lambda:on_Window_Close(master))
+
 		th.set_theme(master)
-		#up.check_update()
+		up.check_update()
 		master.mainloop()
-		

@@ -1,1 +1,13 @@
 Exist and read
+Frame
+TSeparator
+Frame
+TSeparator
+Frame
+Button
+Frame
+Label
+Version Alpha 14
+
+app_version = "Version Alpha 13\n"
+<class 'tkinter.Tk'>

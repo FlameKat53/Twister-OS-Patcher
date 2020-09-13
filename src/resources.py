@@ -16,12 +16,12 @@ if os.path.exists(home_path+'/patcher/src/pat.config'):
 else:
 	print("Creating config...")
 	config['DEFAULT'] = {'color_mode': '0',
-	'version': 'Alpha 13'}
+	'version': 'Alpha 14'}
 	with open(home_path+'/patcher/src/pat.config', 'w') as configfile:
 		config.write(configfile)
 
 ### update stuff
-app_version = "Version Alpha 13\n"
+app_version = "Version Alpha 14\n"
 def get_app_version():
 	return app_version
 
@@ -30,9 +30,5 @@ def cpi_open_url(link):
 	os.system('sudo -upi chromium-browser '+link)
 
 img_path = os.path.dirname('logo.png')
-### Reboot RPI	
-def reboot():
-	os.system("sudo reboot now")
-
+webversion = sp.getoutput('wget -q https://twisteros.com/Patches/latest.txt && cat latest.txt && rm latest.txt')
 twistver = sp.getoutput('twistver')
-webversion = sp.getoutput('curl https://twisteros.com/Patches/checkversion.sh')

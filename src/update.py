@@ -5,9 +5,12 @@ import socket
 import os
 import resources as rs
 from tkinter import messagebox as msb
+from tkinter import *
+import wget
+import subprocess as sp
 
 path = os.path.dirname(os.path.realpath(__file__))
-Files = ["https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/master/src/gui.py", "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/master/src/resources.py", "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/master/src/main.py", "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/master/src/update.py", "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/master/src/theme.py"]
+Files = ["https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/py/src/gui.py", "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/py/src/resources.py", "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/py/src/main.py", "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/py/src/update.py", "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/py/src/theme.py"]
 Names = ["gui.py", "resources.py", "main.py", "update.py", "theme.py"]
 def delete_old():
 	for name in Names:
@@ -16,40 +19,28 @@ def delete_old():
 
 def download_git(url, name):
 	filename, headers = urllib.request.urlretrieve(url, filename="/home/pi/patcher/src/"+name)
-	print ("download start!")
-	print ("download complete!")
-	print ("download file location: ", filename)
-	
-def delete_oldSh():
-	os.system('rm /patcher/src/')
 
-def download_patch(url, name):
-	filename, headers = urllib.request.urlretrieve(url, filename="/home/pi/patcher/src/"+name)
-	print ("download start!")
-	msb.showinfo(title=None, message="Downloading!")
-	print ("download complete!")
+def delete_oldfiles():
+	os.system('rm -f /home/pi/patcher/src/checkversion.sh')
+	os.system('rm -f /home/pi/patcher/src/*patchinstall.sh')
+
+def download_patch():
+	msb.showinfo(title=None, message="Downloading...")
+	wget.download('https://twisteros.com/Patches/checkversion.sh', out='/home/pi/patcher/src/checkversion.sh')
 	msb.showinfo(title=None, message="Download Complete!")
-	print ("download file location: ", filename)
+	msb.showinfo(title=None, message="Extracting...")
 
 def update_twist():
-	url = "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/master/src/resources.py"
-	with urllib.request.urlopen(url) as f:
-		bcontent = f.read().decode('utf-8')
-		bcontent = bcontent.splitlines()
-		bversion = ""
-		for line in bcontent:
-			if "app_version =" in line:
-				bversion=line
-		if rs.twistver[:-1] in bversion:
-			msb.showinfo(title=None, message="There is no update available!")
-		else:
-			delete_oldSh()
-			for f, x in zip(Files, Names):
-				download_patch(f, x)
-			sys.exit(0)
+	if rs.twistver == rs.webversion:
+			msb.showinfo(title="TwistPatch", message="There is no update available!")
+	else:
+		answer = msb.askyesno(title="TwistPatch", message="This will update Twister OS, do you wish to proceed?")
+		if answer == True:
+			delete_oldfiles()
+			download_patch()
 
 def update_cpi():
-	url = "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/master/src/resources.py"
+	url = "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/py/src/resources.py"
 	with urllib.request.urlopen(url) as f:
 		xcontent = f.read().decode('utf-8')
 		xcontent = xcontent.splitlines()
@@ -74,7 +65,7 @@ def is_connected(hostname):
      pass
   return False
 def check_update():
-	url = "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/master/src/resources.py"
+	url = "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/py/src/resources.py"
 	if is_connected("1.1.1.1"):
 		with urllib.request.urlopen(url) as f:
 			xcontent = f.read().decode('utf-8')
