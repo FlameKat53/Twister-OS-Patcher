@@ -7,21 +7,19 @@ from tkinter import *
 from tkinter import ttk
 from PIL import Image, ImageTk
 
-home_path = sys.argv[1]
-
 config = configparser.ConfigParser()
-if os.path.exists(home_path+'/patcher/src/pat.config'):
-	config.read(home_path+'/patcher/src/pat.config')
+if os.path.exists('/home/pi/patcher/src/pat.config'):
+	config.read('/home/pi/patcher/src/pat.config')
 	print("Exist and read")
 else:
 	print("Creating config...")
 	config['DEFAULT'] = {'color_mode': '0',
-	'version': 'Alpha 14'}
-	with open(home_path+'/patcher/src/pat.config', 'w') as configfile:
+	'version': 'Alpha 15'}
+	with open('/home/pi/patcher/src/pat.config', 'w') as configfile:
 		config.write(configfile)
 
 ### update stuff
-app_version = "Version Alpha 14\n"
+app_version = "Version Alpha 15\n"
 def get_app_version():
 	return app_version
 

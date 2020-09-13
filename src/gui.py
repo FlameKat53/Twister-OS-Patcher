@@ -204,5 +204,7 @@ class Window:
 		master.protocol("WM_DELETE_WINDOW", lambda:on_Window_Close(master))
 
 		th.set_theme(master)
-		up.check_update()
+		if up.check_update() == "killApp":
+			lambda e:killwindow(e, master)
+			
 		master.mainloop()

@@ -77,8 +77,11 @@ def check_update():
 			if rs.app_version[:-1] in xversion:
 				print("It works bc it's same version!")
 			else:
-				msb.showinfo(title=None, message="Update is available!")
+				answer = msb.askyesno(title="TwistPatch", message="This will update Twister OS, do you wish to proceed?")
+				if answer == True:
+					update_cpi()
 			print(rs.app_version)
 			print(xversion)
 	else:
-		print("Network is disconnected")
+		ok = msb.showinfo(title="TwistPatch", message="Network is disconnected\nThe patcher will now close")
+		return "killApp"
