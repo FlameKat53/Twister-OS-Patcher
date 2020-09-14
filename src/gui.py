@@ -143,12 +143,9 @@ class Window:
 		separator2 = ttk.Separator(mainframe, orient='horizontal')
 		separator2.pack(fill=X, expand=True, pady=10)
 
-
-
 		content_frame = Frame(mainframe)
 		content_frame.hidden = 0
 		content_frame.pack(fill=X)
-		
 
 		photo1 = PhotoImage(file = home_path+"/patcher/src/icons/update.png") 
 
@@ -159,13 +156,8 @@ class Window:
 		btn = Button( mainframe, text="About", command = lambda:change_frame(), font=("TkDefaultFont", 11, "bold"), cursor="hand2")
 		btn.pack(side=BOTTOM, pady=5)
 
-		
-		
 		content_frame2 = Frame(mainframe)
-		#content_frame2.hidden = 1
-		#content_frame2.pack()
 
-		
 		about_label = tk.Label( content_frame2, text = "TwistPatch, Commander Pi 2020\n", justify=CENTER, font=("TkDefaultFont", 11, "bold"))
 		about_label.pack()
 		
@@ -195,5 +187,8 @@ class Window:
 		th.set_theme(master)
 		if up.check_online() == False:
 			crash.app()
+
+		if sys.argv[2] == "1":
+			up.update_twist()
 
 		master.mainloop()
