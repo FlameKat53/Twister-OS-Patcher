@@ -18,5 +18,6 @@ mv Twister-OS-Patcher-py/ ~/patcher/
 #unzip master.zip
 #rm master.zip
 #mv Twister-OS-Patcher-master/ ~/patcher/
+cd ~/patcher/
 sudo python3 c_desktop.py $USER
 sudo chmod +x /home/pi/patcher/src/start.sh
