@@ -12,12 +12,10 @@ import subprocess as sp
 path = os.path.dirname(os.path.realpath(__file__))
 
 def delete_oldfiles():
-	os.system('rm -f /home/pi/patcher/src/checkversion.py')
 	os.system('rm -f /home/pi/patcher/src/*patchinstall.sh')
 
 def download_patch():
 	msb.showinfo(title="TwistPatch", message="Download will start in the background\n Press OK to continue.")
-	wget.download('https://twisteros.com/Patches/checkversion.py', out='/home/pi/patcher/src/checkversion.py')
 	import checkversion as cv
 	cv.update()
 
