@@ -14,10 +14,8 @@ wget https://github.com/FlameKat53/Twister-OS-Patcher/archive/py.zip
 unzip py.zip
 rm py.zip
 mv Twister-OS-Patcher-py/ /home/pi/patcher/
-#wget https://github.com/FlameKat53/Twister-OS-Patcher/archive/master.zip
-#unzip master.zip
-#rm master.zip
-#mv Twister-OS-Patcher-master/ /home/pi/patcher/
 cd /home/pi/patcher/
 sudo python3 c_desktop.py $USER
 sudo chmod +x /home/pi/patcher/src/start.sh
+crontab -l | { cat; echo "0 24 * * * sudo -H -u pi bash -c 'python3 /home/pi/patcher/src/checkforupdates.py'"; } | crontab -
+crontab -l | { cat; echo "0 24 * * * sudo -H -u pi bash -c 'python3 /home/pi/patcher/src/checkforupdates.py'"; } | crontab -
