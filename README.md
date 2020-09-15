@@ -1,6 +1,6 @@
 # TwistPatch
 ![](https://i.postimg.cc/rwTFyXLs/tos-patcher-new2.png)<br>
-An updater for Twister OS that automatically downloads, unzips, and runs the latest patch for Twister OS. It is fine if you run the patcher more than once as it auto-detects your version. You have to run the patcher when you can reboot your computer as it is required for patching.<br>
+An updater for Twister OS that downloads, unzips, and runs the latest patch for Twister OS. It is fine if you run the patcher more than once as it auto-detects your version. when you run the patcher, you must reboot your computer after patching completes.<br>
 
 
 #### Go support Twister OS!</br>
@@ -15,7 +15,8 @@ If you notice the repo has been changed, run `twistpatch-update` to update your 
 
 # Usage
 ![18-08-2020-08-02-21-REC.png](https://i.postimg.cc/cHq94jWb/18-08-2020-08-02-21-REC.png)<br>
-There are 3 ways to open the patcher. Firstly, you can click on the "Twister OS Patcher" in your desktop and applications menu. Secondly, you can type "twistpatch" into terminal. Lastly, you can install [MacOS Notification Center](https://github.com/krishenriksen/notificationcenter), open it, and click "Patch Twister OS to the latest version". Once you open the patcher, make sure nothing important is running so you can reboot. Once it is open wait about 5 seconds to download the latest scripts and then  either it'll start downloading patches and rebooting, say you're on the latest patch and exit, or say you're offline and exit. If you have missed out on more than 1 patch, then you'll have to run it again until you get to the latest version because this is WHAT YOU GET for not updating.
+There are 3 ways to open the patcher. Firstly, you can click on the "Twister OS Patcher" in your applications menu. Secondly, you can type "twistpatch" into terminal. Once you open the patcher, make sure nothing important is running so you can reboot. Once it is open click the big button labeled "Update Twister OS" to download the latest scripts and then it will either start downloading patches and rebooting, say you are on the latest patch and exit, or say you're offline and then exit. 
+If you have missed out on more than 1 patch, then you will have to run it again until you get to the latest version because updates are not cumulative.
 
 ### Commands
 ```
@@ -26,16 +27,16 @@ twistpatch-remove:    Uninstalls TwistPatcher from your system
 
 # Icon
 ![twister-update-blue.png](https://i.postimg.cc/65RvYzJG/twister-update-blue.png) [![twister-update.png](https://i.postimg.cc/8kxvR93S/twister-update.png)](https://postimg.cc/G9J9r7d7)<br>
-If you don't like the default icon, then right-click on the application and select 'Edit application' for the application menu. For the desktop application, right clikc and select "Edit launcher". Then click on either one of the two other icons which are displayed above.<br>
+If you don't like the default icon, then right-click on the application and select 'Edit application' for the application menu. For the desktop application, right-click and select "Edit launcher". Then click on either one of the two other icons that are displayed above.<br>
 [![18-08-2020-12-08-17-REC.png](https://i.postimg.cc/mkVFbMwh/18-08-2020-12-08-17-REC.png)](https://postimg.cc/8fJC47xV)<br>
 [![18-08-2020-12-08-49-REC.png](https://i.postimg.cc/MZYBb2Sx/18-08-2020-12-08-49-REC.png)](https://postimg.cc/pypyRSr1)
 
 # Support
-We have tested the code extensively, but mistakes do happen. If you have any problems, make an issue in this repository or go to the Pi Labs discord to connect with us at https://discord.gg/ttxhYrX
+We have tested the code extensively, but mistakes do happen. If you have any problems, make an issue in this repository or go to the Pi Labs discord to get in connect with us at https://discord.gg/ttxhYrX
 
 # Demonstration
-This patcher has been featured in these places:<br>
-[Raspberry Pi News](https://youtu.be/bTTF0VT_ClM)<br>
+The patcher has been featured in these places:<br>
+[Raspberry Pi News](https://www.youtube.com/watch?v=bTTF0VT_ClM)<br>
 [leepspvideo on Youtube](https://www.youtube.com/watch?v=EP1KWsvT4ME)
 
 # Credits
@@ -58,6 +59,7 @@ Alpha/Beta
 
 Official release
 - [x] Release program to public and inclusion in patch 1.6
+- [] Release the Python3 patcher to public and inclusion in patch 1.9
 
 Bugs
-- [] Notifications not showing
+- [] Notifications not showing - seems to be fixed, needs testing
