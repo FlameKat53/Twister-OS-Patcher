@@ -15,7 +15,7 @@ unzip py.zip
 rm py.zip
 mv Twister-OS-Patcher-py/ /home/pi/patcher/
 cd /home/pi/patcher/
-sudo python3 c_desktop.py $USER
+python3 c_desktop.py $USER
 sudo chmod +x /home/pi/patcher/src/start.sh
 crontab -l | { cat; echo "* 12 * * * sudo -H -u pi bash -c 'python3 /home/pi/patcher/src/checkforupdates.py'"; } | crontab -
 
