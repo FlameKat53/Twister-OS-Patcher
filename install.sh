@@ -26,13 +26,13 @@ crontab -l | { cat; echo "* 12 * * * sudo -H -u pi bash -c 'python3 /home/pi/pat
 sudo rm -f /usr/local/bin/twistpatch
 
 if [ ! -f "/usr/local/bin/twistpatch" ]; then
-    sudo ln -s '~/patcher/src/updatenow.sh' /usr/local/bin/twistpatch
+    sudo ln -s '/home/pi/patcher/src/updatenow.sh' /usr/local/bin/twistpatch
     sudo chmod +x /usr/local/bin/twistpatch
 fi
 
 sudo rm -f /usr/local/bin/twistpatch-uninstall
 
 if [ ! -f "/usr/local/bin/twistpatch-uninstall" ]; then
-    sudo ln -s '~/patcher/uninstall.sh' /usr/local/bin/twistpatch-uninstall
+    sudo ln -s '/home/pi/patcher/uninstall.sh' /usr/local/bin/twistpatch-uninstall
     sudo chmod +x /usr/local/bin/twistpatch-uninstall
 fi
