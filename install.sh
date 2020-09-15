@@ -8,7 +8,7 @@ echo Checking for tkinter: $problem
 if [ "" == "$problem" ]; then
 	sudo apt-get install python3-tk
 fi
-sudo apt-get install python3-pil python3-pil.imagetk python3-wget
+sudo apt install -y python3-pil python3-pil.imagetk python3-wget
 #Get archive from github and unzip it
 wget https://github.com/FlameKat53/Twister-OS-Patcher/archive/py.zip
 unzip py.zip
