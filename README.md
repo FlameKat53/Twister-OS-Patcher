@@ -36,7 +36,7 @@ We have tested the code extensively, but mistakes do happen. If you have any pro
 # Demonstration
 This patcher has been featured in these places:<br>
 [Raspberry Pi News](https://youtu.be/bTTF0VT_ClM)<br>
-[leepsvideo on Youtube](https://www.youtube.com/watch?v=EP1KWsvT4ME)
+[leepspvideo on Youtube](https://www.youtube.com/watch?v=EP1KWsvT4ME)
 
 # Credits
 [FlameKat53](https://github.com/FlameKat53): Main patch.sh and logic behind automatic patching. Started developing the code first.<br>
