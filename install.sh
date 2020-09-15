@@ -17,9 +17,9 @@ mv Twister-OS-Patcher-py/ /home/pi/patcher/
 cd /home/pi/patcher/
 python3 c_desktop.py $USER
 cd /home/pi/patcher/
-sudo chmod +x *
+sudo chmod +x *.sh
 cd /home/pi/patcher/src/
-sudo chmod +x *
+sudo chmod +x *.sh
 crontab -l | { cat; echo "* 12 * * * sudo -H -u pi bash -c 'python3 /home/pi/patcher/src/checkforupdates.py'"; } | crontab -
 
 #Adds commands
