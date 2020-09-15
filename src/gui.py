@@ -161,7 +161,7 @@ class Window:
 		about_label = tk.Label( content_frame2, text = "TwistPatch, Commander Pi 2020\n", justify=CENTER, font=("TkDefaultFont", 11, "bold"))
 		about_label.pack()
 		
-		text_label = tk.Label( content_frame2, text="By Jack477\nFor Twister OS\n\nGraphic elements by grayduck\nApp idea by Salva\nTwistPatch by setLillie (FlameKat53) and Raspberry Pi News", justify=CENTER)
+		text_label = tk.Label( content_frame2, text="By Jack477\nFor Twister OS\n\nGraphic elements by grayduck\nApp idea by Raspberry Pi News\nTwistPatch by setLillie (FlameKat53) and Raspberry Pi News", justify=CENTER)
 		text_label.pack(fill=X)
 		
 		version_label = tk.Label( content_frame2, text=rs.get_app_version(), font=("TkDefaultFont", 11, "bold"), justify=CENTER)
