@@ -8,10 +8,10 @@ if [ -d ~/patcher/ ]; then
   rm -r ~/patcher/
 fi
 if [ -f ~/.local/share/applications/patcher.desktop ]; then
-  rm ~/.local/share/applications/patcher.desktop
+  sudo rm ~/.local/share/applications/patcher.desktop
 fi
 if [ -f ~/Desktop/patcher.desktop ]; then
-  rm ~/Desktop/patcher.desktop
+  sudo rm ~/Desktop/patcher.desktop
 fi
 sudo rm -f /usr/local/bin/twistpatch
 sudo rm -f /usr/local/bin/twistpatch-uninstall
