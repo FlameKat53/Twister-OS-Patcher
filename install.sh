@@ -37,3 +37,10 @@ if [ ! -f "/usr/local/bin/twistpatch-uninstall" ]; then
     sudo ln -s '/home/pi/patcher/uninstall.sh' /usr/local/bin/twistpatch-remove
     sudo chmod +x /usr/local/bin/twistpatch-remove
 fi
+
+sudo rm -f /usr/local/bin/twistpatch-update
+
+if [ ! -f "/usr/local/bin/twistpatch-update" ]; then
+    sudo ln -s /home/pi/patcher/upgradepatcher.sh /usr/local/bin/twistpatch-update
+    sudo chmod +x /usr/local/bin/twistpatch-update
+fi
