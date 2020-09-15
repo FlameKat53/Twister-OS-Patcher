@@ -16,6 +16,6 @@ if [ -f ~/Desktop/patcher.desktop ]; then
 fi
 sudo rm -f /usr/local/bin/twistpatch
 sudo rm -f /usr/local/bin/twistpatch-update
-sudo rm -f /usr/local/bin/twistpatch-uninstall
+sudo rm -f /usr/local/bin/twistpatch-remove
 crontab -l | grep -v checkforupdates | crontab -
 echo 'Uninstalled.'
