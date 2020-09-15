@@ -33,7 +33,7 @@ fi
 sudo rm -f /usr/local/bin/twistpatch-uninstall
 sudo rm -f /usr/local/bin/twistpatch-remove
 
-if [ ! -f "/usr/local/bin/twistpatch-uninstall" ]; then
+if [ ! -f "/usr/local/bin/twistpatch-remove" ]; then
     sudo ln -s '/home/pi/patcher/uninstall.sh' /usr/local/bin/twistpatch-remove
     sudo chmod +x /usr/local/bin/twistpatch-remove
 fi
