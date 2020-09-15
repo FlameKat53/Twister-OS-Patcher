@@ -36,3 +36,5 @@ if [ ! -f "/usr/local/bin/twistpatch-uninstall" ]; then
     sudo ln -s '~/patcher/uninstall.sh' /usr/local/bin/twistpatch-uninstall
     sudo chmod +x /usr/local/bin/twistpatch-uninstall
 fi
+
+sudo rm -f install.sh
