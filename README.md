@@ -45,7 +45,8 @@ The patcher has been featured in these places:<br>
 [grayduck](https://www.youtube.com/channel/UCgfQjdc5RceRlTGfuthBs7g): Lending us his bash expertise and all graphics in this patcher.<br>
 [phoenixbyrd](https://github.com/phoenixbyrd): Uploading files for us to the website.<br>
 [kreal](https://github.com/krishenriksen): making checkforupdates.sh, modifying install.sh, and cron code.<br>
-[vlevit](https://github.com/vlevit/): https://github.com/vlevit/notify-send.sh
+[vlevit](https://github.com/vlevit/): https://github.com/vlevit/notify-send.sh<br>
+[Jack477](https://github.com/Jack477): Letting us steal GUI code from CommanderPi and lending us python help. https://github.com/Jack477/CommanderPi
 
 # Changes
 Dev phase
@@ -60,6 +61,3 @@ Alpha/Beta
 Official release
 - [x] Release program to public and inclusion in patch 1.6
 - [] Release the Python3 patcher to public and inclusion in patch 1.9
-
-Bugs
-- [] Notifications not showing - seems to be fixed, needs testing
