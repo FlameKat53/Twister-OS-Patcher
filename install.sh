@@ -18,3 +18,13 @@ cd /home/pi/patcher/
 sudo python3 c_desktop.py $USER
 sudo chmod +x /home/pi/patcher/src/start.sh
 crontab -l | { cat; echo "* 12 * * * sudo -H -u pi bash -c 'python3 /home/pi/patcher/src/checkforupdates.py'"; } | crontab -
+
+#Adds commands
+if [ ! -f "/usr/local/bin/twistpatch" ]; then
+    sudo ln -s '~/patcher/src/updatenow.sh' /usr/local/bin/twistpatch
+    sudo chmod 755 /usr/local/bin/twistpatch
+fi
+if [ ! -f "/usr/local/bin/twistpatch-uninstall" ]; then
+    sudo ln -s '~/patcher/uninstall.sh' /usr/local/bin/twistpatch-uninstall
+    sudo chmod 755 /usr/local/bin/twistpatch-uninstall
+fi
