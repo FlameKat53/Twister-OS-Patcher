@@ -20,7 +20,7 @@ cd /home/pi/patcher/
 sudo chmod +x *.sh
 cd /home/pi/patcher/src/
 sudo chmod +x *.sh
-crontab -l | { cat; echo "* 12 * * * python3 '/home/pi/patcher/src/notifysend.py'"; } | crontab -
+#crontab -l | { cat; echo "* 12 * * * python3 '/home/pi/patcher/src/notifysend.py'"; } | crontab -
 
 #Adds commands
 sudo rm -f /usr/local/bin/twistpatch
