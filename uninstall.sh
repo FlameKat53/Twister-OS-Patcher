@@ -5,7 +5,8 @@ cd ~
 
 #Checks to see if these files exist and replace or remove them
 if [ -d ~/patcher/ ]; then
-  rm -r ~/patcher/
+  sudo rm -r ~/patcher/
+  # we need sudo for the pycache files
 fi
 if [ -f ~/.local/share/applications/patcher.desktop ]; then
   sudo rm ~/.local/share/applications/patcher.desktop
