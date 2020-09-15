@@ -15,5 +15,5 @@ if [ -f ~/Desktop/patcher.desktop ]; then
 fi
 sudo rm -f /usr/local/bin/twistpatch
 sudo rm -f /usr/local/bin/twistpatch-uninstall
-crontab -l | sed -n '/0 \* \* \* \* \~\/patcher\/checkforupdates.sh/!p' | crontab -
+crontab -l | sed -n '/0 \* \* \* \* \\/home\/pi\/patcher\/src\/notifysend.py/!p' | crontab -
 echo 'Uninstalled.'
