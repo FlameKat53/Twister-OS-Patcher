@@ -167,6 +167,8 @@ class Window:
 		version_label = tk.Label( content_frame2, text=rs.get_app_version(), font=("TkDefaultFont", 11, "bold"), justify=CENTER)
 		version_label.pack()
 
+		def on_click(self, event):
+			self.focus_force()
 		def change_frame():
 			if content_frame.hidden == 0:
 				content_frame.pack_forget()
@@ -182,6 +184,7 @@ class Window:
 		bind_label = tk.Label( mainframe, text="Press [Esc] to close", font=("TkDefaultFont", 11, "bold" ))
 		bind_label.pack(side=BOTTOM)
 		master.bind('<Escape>', lambda e:killwindow(e, master))
+		master.bind("<Button>", lambda event:on_click(master, event))
 		master.protocol("WM_DELETE_WINDOW", lambda:on_Window_Close(master))
 
 		th.set_theme(master)
