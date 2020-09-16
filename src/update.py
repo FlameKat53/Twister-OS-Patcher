@@ -54,8 +54,9 @@ def check_online():
 			else:
 				msb.showinfo(title=None, message="A patcher update is available.")
 				upgradeavaliable = 1
-			print(rs.app_version)
-			print(xversion)
+				print(upgradeavaliable)
+				print(rs.app_version)
+				print(xversion)
 		return True
 	else:
 		print("Network is disconnected")
@@ -63,7 +64,7 @@ def check_online():
 		
 def update_patcher():
 	if upgradeavaliable == 1:
-		answer = msb.askyesno(title="TwistPatch", message='A patcehr update is avaliable.\nWould you like to update the patcher?')
+		answer = msb.askyesno(title="TwistPatch", message='A patcher update is avaliable.\nWould you like to update the patcher?')
 		if answer == True:
 			os.system('twistpatch-update')
 			msb.sendinfo(title='TwistPatch', message='Update complete.\nThe app will now close.')
