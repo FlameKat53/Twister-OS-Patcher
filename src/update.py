@@ -52,8 +52,9 @@ def check_online():
 			if rs.app_version[:-1] in xversion:
 				print("It works bc it's same version!")
 			else:
-				msb.showinfo(title=None, message="A patcher update is available.")
+				#msb.showinfo(title=None, message="A patcher update is available.")
 				upgradeavaliable = 1
+				update_patcher()
 				print(upgradeavaliable)
 				print(rs.app_version)
 				print(xversion)
