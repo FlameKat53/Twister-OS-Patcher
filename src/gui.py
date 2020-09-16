@@ -193,6 +193,6 @@ class Window:
 			up.update_twist()
 
 		if up.check_online() == False:
-			crash.app()
+			sys.exit(0)
 
 		master.mainloop()
