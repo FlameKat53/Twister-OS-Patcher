@@ -11,21 +11,6 @@ import subprocess as sp
 
 path = os.path.dirname(os.path.realpath(__file__))
 
-def update_pat():
-	url = "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/py/src/resources.py"
-	with urllib.request.urlopen(url) as f:
-		xcontent = f.read().decode('utf-8')
-		xcontent = xcontent.splitlines()
-		xversion = ""
-		for line in xcontent:
-			if "app_version =" in line:
-				xversion=line
-		if rs.app_version[:-1] in xversion:
-			msb.showinfo(title=None, message="There is no update available!")
-		else:
-			os.system('cd ../ && ./uninstall.sh && cd ../ && wget https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/py/install.sh && chmod +x ./install.sh && ./install.sh && rm install.sh')
-			sys.exit(0)
-
 def delete_oldfiles():
 	os.system('rm -f /home/pi/patcher/src/*patchinstall.sh')
 
@@ -55,21 +40,22 @@ def is_connected(hostname):
 def check_online():
 	url = "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/py/src/resources.py"
 	if is_connected("1.1.1.1"):
-		with urllib.request.urlopen(url) as f:
-			xcontent = f.read().decode('utf-8')
-			xcontent = xcontent.splitlines()
-			xversion = ""
-			for line in xcontent:
-				if "app_version =" in line:
-					xversion=line
-			if rs.app_version[:-1] in xversion:
-				print("It works bc it's same version!")
-			else:
-				answer = msb.askyesno(title="TwistPatch", message='A patcher update is avaliable.\nWould you like to update the patcher?')
-				if answer == True:
-					update_pat()
-				print(rs.app_version)
-				print(xversion)
+		#with urllib.request.urlopen(url) as f:
+		#	xcontent = f.read().decode('utf-8')
+		#	xcontent = xcontent.splitlines()
+		#	xversion = ""
+		#	for line in xcontent:
+		#		if "app_version =" in line:
+		#			xversion=line
+		#	if rs.app_version[:-1] in xversion:
+		#		print("It works bc it's same version!")
+		#	else:
+		#		answer = msb.askyesno(title="TwistPatch", message='A patcher update is avaliable.\nWould you like to update the patcher?')
+		#		if answer == True:
+		#			update_pat()
+		#		print(rs.app_version)
+		#		print(xversion)
+		print("Network is connected")
 		return True
 	else:
 		print("Network is disconnected")
