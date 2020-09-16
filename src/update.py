@@ -12,7 +12,7 @@ import subprocess as sp
 path = os.path.dirname(os.path.realpath(__file__))
 
 def update_pat():
-	url = "https://raw.githubusercontent.com/Jack477/CommanderPi/master/src/resources.py"
+	url = "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/py/src/resources.py"
 	with urllib.request.urlopen(url) as f:
 		xcontent = f.read().decode('utf-8')
 		xcontent = xcontent.splitlines()
@@ -30,7 +30,6 @@ def delete_oldfiles():
 	os.system('rm -f /home/pi/patcher/src/*patchinstall.sh')
 
 def download_patch():
-	msb.showinfo(title="TwistPatch", message="Download will start in the background\n Press OK to continue.")
 	import checkversion as cv
 	cv.update()
 
@@ -52,16 +51,6 @@ def is_connected(hostname):
   except:
      pass
   return False
-
-def update_patcher(upgradeavaliable):
-	if upgradeavaliable == True:
-		answer = msb.askyesno(title="TwistPatch", message='A patcher update is avaliable.\nWould you like to update the patcher?')
-		if answer == True:
-			os.system('twistpatch-update')
-
-			return True
-		else:
-			return False
 
 def check_online():
 	url = "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/py/src/resources.py"
