@@ -189,10 +189,10 @@ class Window:
 		th.set_theme(master)
 
 		if sys.argv[2] == "1":
-			msb.showinfo(title="TwistPatch", message="Network is disconnected\nThe patcher will now close")
 			up.update_twist()
 
 		if up.check_online() == False:
+			msb.showinfo(title="TwistPatch", message="Network is disconnected\nThe patcher will now close")
 			sys.exit(0)
 
 		master.mainloop()
