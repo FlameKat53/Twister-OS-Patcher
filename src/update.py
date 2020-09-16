@@ -10,6 +10,7 @@ import wget
 import subprocess as sp
 
 path = os.path.dirname(os.path.realpath(__file__))
+upgradeavaliable = 0
 
 def delete_oldfiles():
 	os.system('rm -f /home/pi/patcher/src/*patchinstall.sh')
@@ -41,8 +42,32 @@ def is_connected(hostname):
 def check_online():
 	url = "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/py/src/resources.py"
 	if is_connected("1.1.1.1"):
-		print("You're Online!")
+		with urllib.request.urlopen(url) as f:
+			xcontent = f.read().decode('utf-8')
+			xcontent = xcontent.splitlines()
+			xversion = ""
+			for line in xcontent:
+				if "app_version =" in line:
+					xversion=line
+			if rs.app_version[:-1] in xversion:
+				print("It works bc it's same version!")
+			else:
+				msb.showinfo(title=None, message="A patcher update is available.")
+				upgradeavaliable = 1
+			print(rs.app_version)
+			print(xversion)
 		return True
 	else:
-		msb.showinfo(title="TwistPatch", message="Network is disconnected\nThe patcher will now close")
+		print("Network is disconnected")
 		return False
+		
+def update_patcher():
+	if upgradeavaliable == 1:
+		answer = msb.askyesno(title="TwistPatch", message='A patcehr update is avaliable.\nWould you like to update the patcher?')
+		if answer == True:
+			os.system('twistpatch-update')
+			msb.sendinfo(title='TwistPatch', message='Update complete.\nThe app will now close.')
+			app.crash()
+			return True
+		else:
+			return False

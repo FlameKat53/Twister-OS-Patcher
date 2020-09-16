@@ -81,8 +81,6 @@ class About_Window:
 		
 		link = tk.Label( content_frame, text="Changelog", cursor="hand2", fg="#1D81DA", pady=5)
 		link.pack(fill=X)
-		mlink = 'https://github.com/FlameKat53/Twister-OS-Patcher/blob/master/CHANGELOG.md'
-		link.bind("<Button-1>", lambda e: rs.cpi_open_url(mlink))
 		
 		separator2 = ttk.Separator(mainframe, orient='horizontal')
 		separator2.pack(fill=X, expand=True, pady=15)
@@ -167,20 +165,25 @@ class Window:
 		version_label = tk.Label( content_frame2, text=rs.get_app_version(), font=("TkDefaultFont", 11, "bold"), justify=CENTER)
 		version_label.pack()
 
+		update_button = Button(mainframe, text="Check for patcher updates", command=lambda:up.update_patcher(), cursor="hand2", font=("TkDefaultFont", 11, "bold"))
+		
 		def on_click(self, event):
 			self.focus_force()
+
 		def change_frame():
 			if content_frame.hidden == 0:
 				content_frame.pack_forget()
 				content_frame2.pack()
+				update_button.pack()
 				btn['text'] = 'Back to main window'
 				content_frame.hidden = 1
 			else:
-				content_frame.pack()
 				content_frame2.pack_forget()
-				btn['text'] = 'About/Update the Patcher'
+				update_button.pack_forget()
+				content_frame.pack()
+				btn['text'] = 'About/Update Patcher'
 				content_frame.hidden = 0
-			
+
 		bind_label = tk.Label( mainframe, text="Press [Esc] to close", font=("TkDefaultFont", 11, "bold" ))
 		bind_label.pack(side=BOTTOM)
 		master.bind('<Escape>', lambda e:killwindow(e, master))
@@ -188,10 +191,12 @@ class Window:
 		master.protocol("WM_DELETE_WINDOW", lambda:on_Window_Close(master))
 
 		th.set_theme(master)
-		if up.check_online() == False:
-			crash.app()
 
 		if sys.argv[2] == "1":
+			msb.showinfo(title="TwistPatch", message="Network is disconnected\nThe patcher will now close")
 			up.update_twist()
+
+		if up.check_online() == False:
+			crash.app()
 
 		master.mainloop()
