@@ -165,7 +165,7 @@ class Window:
 		version_label = tk.Label( content_frame2, text=rs.get_app_version(), font=("TkDefaultFont", 11, "bold"), justify=CENTER)
 		version_label.pack()
 
-		update_button = Button(mainframe, text="Check for patcher updates", command=lambda:up.update_patcher(), cursor="hand2", font=("TkDefaultFont", 11, "bold"))
+		#update_button = Button(mainframe, text="Check for patcher updates", command=lambda:up.update_patcher(), cursor="hand2", font=("TkDefaultFont", 11, "bold"))
 		
 		def on_click(self, event):
 			self.focus_force()
@@ -174,12 +174,12 @@ class Window:
 			if content_frame.hidden == 0:
 				content_frame.pack_forget()
 				content_frame2.pack()
-				update_button.pack()
+				#update_button.pack()
 				btn['text'] = 'Back to main window'
 				content_frame.hidden = 1
 			else:
 				content_frame2.pack_forget()
-				update_button.pack_forget()
+				#update_button.pack_forget()
 				content_frame.pack()
 				btn['text'] = 'About/Update Patcher'
 				content_frame.hidden = 0
