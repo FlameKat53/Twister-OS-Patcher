@@ -10,20 +10,6 @@ import wget
 import subprocess as sp
 
 path = os.path.dirname(os.path.realpath(__file__))
-Files = ["https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/py/src/gui.py", "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/py/src/resources.py", "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/py/src/main.py", "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/py/src/update.py", "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/py/src/theme.py"]
-#Files = ["https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/master/src/gui.py", "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/master/src/resources.py", "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/master/src/main.py", "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/master/src/update.py", "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/master/src/theme.py"]
-Names = ["gui.py", "resources.py", "main.py", "update.py", "theme.py"]
-def delete_old():
-	for name in Names:
-		os.system('rm '+path+'/'+name)
-		print("Deleted "+name)
-
-def download_git(url, name):
-	filename, headers = urllib.request.urlretrieve(url, filename="/home/pi/CommanderPi/src/"+name)
-	print ("download start!")
-	print ("download complete!")
-	print ("download file location: ", filename)
-	#print ("download headers: ", headers)
 
 def update_pat():
 	url = "https://raw.githubusercontent.com/Jack477/CommanderPi/master/src/resources.py"
@@ -37,9 +23,7 @@ def update_pat():
 		if rs.app_version[:-1] in xversion:
 			msb.showinfo(title=None, message="There is no update available!")
 		else:
-			delete_old()
-			for f, x in zip(Files, Names):
-				download_git(f, x)
+			os.system('cd ../ && ./uninstall.sh && cd ../ && wget https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/py/install.sh && chmod +x ./install.sh && ./install.sh && rm install.sh')
 			sys.exit(0)
 
 def delete_oldfiles():
