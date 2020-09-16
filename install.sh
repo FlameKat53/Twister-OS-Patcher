@@ -14,10 +14,10 @@ sudo pip3 install wget
 wget https://github.com/FlameKat53/Twister-OS-Patcher/archive/py.zip
 unzip py.zip
 rm py.zip
+sudo rm -r -f /home/pi/patcher
 mv Twister-OS-Patcher-py/ /home/pi/patcher/
 cd /home/pi/patcher/
 python3 c_desktop.py $USER
-cd /home/pi/patcher/
 sudo chmod +x *.sh
 cd /home/pi/patcher/src/
 sudo chmod +x *.sh
