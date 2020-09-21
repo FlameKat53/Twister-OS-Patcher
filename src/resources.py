@@ -14,12 +14,12 @@ if os.path.exists('/home/pi/patcher/src/pat.config'):
 else:
 	print("Creating config...")
 	config['DEFAULT'] = {'color_mode': '0',
-	'version': '0.1.1'}
+	'version': '0.1.2'}
 	with open('/home/pi/patcher/src/pat.config', 'w') as configfile:
 		config.write(configfile)
 
 ### update stuff
-app_version = "Version 0.1.1\n"
+app_version = "Version 0.1.2\n"
 def get_app_version():
 	return app_version
 
