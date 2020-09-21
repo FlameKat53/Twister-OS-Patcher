@@ -15,8 +15,8 @@ If you notice the repo has been changed, run `twistpatch-update` to update your 
 
 # Usage
 ![18-08-2020-08-02-21-REC.png](https://i.postimg.cc/cHq94jWb/18-08-2020-08-02-21-REC.png)<br>
-There are 3 ways to open the patcher. Firstly, you can click on the "Twister OS Patcher" in your applications menu. Secondly, you can type "twistpatch" into terminal. Once you open the patcher, make sure nothing important is running so you can reboot. Once it is open click the big button labeled "Update Twister OS" to download the latest scripts and then it will either start downloading patches and rebooting, say you are on the latest patch and exit, or say you're offline and then exit. 
-If you have missed out on more than 1 patch, then you will have to run it again until you get to the latest version because updates are not cumulative.
+There are 3 ways to open the patcher. Firstly, you can click on the "Twister OS Patcher" in your applications menu. Secondly, you can type "twistpatch" into terminal, and thirdly, you can use the "Patch Twister OS" button in notificationcenter. it will take a while to open, but once you open the patcher, make sure nothing important is running(compiling, unsaved mc worlds, etc)because you have to reboot after the patch. Once it is open, click the big button labeled "Update Twister OS" to download the latest scripts to check for updates. It will either start downloading patches and rebooting, or say you are on the latest patch and exit, or say you're offline and then exit. 
+If you have missed out on more than 1 patch, then you will have to run the patcher after each reboot due to the nature of how the patches install updates.
 
 ### Commands
 ```
@@ -27,12 +27,12 @@ twistpatch-remove:    Uninstalls TwistPatcher from your system
 
 # Icon
 ![twister-update-blue.png](https://i.postimg.cc/65RvYzJG/twister-update-blue.png) [![twister-update.png](https://i.postimg.cc/8kxvR93S/twister-update.png)](https://postimg.cc/G9J9r7d7)<br>
-If you don't like the default icon, then right-click on the application and select 'Edit application' for the application menu. For the desktop application, right-click and select "Edit launcher". Then click on either one of the two other icons that are displayed above.<br>
+If you don't like the default icon, then right-click on the application icon and select 'Edit application', then click on either one of the two other icons that are in the folder, which are displayed above.<br>
 [![18-08-2020-12-08-17-REC.png](https://i.postimg.cc/mkVFbMwh/18-08-2020-12-08-17-REC.png)](https://postimg.cc/8fJC47xV)<br>
 [![18-08-2020-12-08-49-REC.png](https://i.postimg.cc/MZYBb2Sx/18-08-2020-12-08-49-REC.png)](https://postimg.cc/pypyRSr1)
 
 # Support
-We have tested the code extensively, but mistakes do happen. If you have any problems, make an issue in this repository or go to the Pi Labs discord to get in connect with us at https://discord.gg/ttxhYrX
+We have tested the code extensively, but mistakes do happen. If you have any problems, make an issue in this repository or go to the Pi Labs discord to connect with us at https://discord.gg/ttxhYrX
 
 # Demonstration
 The patcher has been featured in these places:<br>
@@ -43,7 +43,7 @@ The patcher has been featured in these places:<br>
 [FlameKat53](https://github.com/FlameKat53): Main patch.sh and logic behind automatic patching. Started developing the code first.<br>
 [Raspberry Pi News](https://www.youtube.com/channel/UCmp6JswV90SV5agNFGQuWkw): The idea of an automatic patcher, install.sh and various other pieces of code.<br>
 [grayduck](https://www.youtube.com/channel/UCgfQjdc5RceRlTGfuthBs7g): Lending us his bash expertise and all graphics in this patcher.<br>
-[phoenixbyrd](https://github.com/phoenixbyrd): Uploading files for us to the website.<br>
+[boomer bird boibyrd](https://github.com/boomer bird boibyrd): Uploading files for us to the website.<br>
 [kreal](https://github.com/krishenriksen): making checkforupdates.sh, modifying install.sh, and cron code.<br>
 [vlevit](https://github.com/vlevit/): https://github.com/vlevit/notify-send.sh<br>
 [Jack477](https://github.com/Jack477): Letting us steal GUI code from CommanderPi and lending us python help. https://github.com/Jack477/CommanderPi
