@@ -3,6 +3,7 @@ import sys
 import urllib.request
 import socket
 import os
+import checkversion as cv
 import resources as rs
 from tkinter import messagebox as msb
 from tkinter import *
@@ -10,19 +11,17 @@ import wget
 import subprocess as sp
 
 path = os.path.dirname(os.path.realpath(__file__))
-
 def delete_oldfiles():
 	os.system('rm -f /home/pi/patcher/src/*patchinstall.sh')
 
 def download_patch():
-	import checkversion as cv
 	cv.update()
 
 def update_twist():
 	if rs.twistver == rs.webversion:
-			msb.showinfo(title="TwistPatch", message="There is no update available!")
+		msb.showinfo(title="TwistPatch", message="There is no update available!")
 	else:
-		answer = msb.askyesno(title="TwistPatch", message="This will update Twister OS, do you wish to proceed?")
+		answer = msb.askyesno(title="TwistPatch", message="This will update Twister OS it could take a while, do you wish to proceed?")
 		if answer == True:
 			delete_oldfiles()
 			download_patch()

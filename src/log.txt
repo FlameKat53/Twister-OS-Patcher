@@ -7,3 +7,5 @@ Frame
 Button
 Frame
 Label
+Network is connected
+<class 'tkinter.Tk'>
