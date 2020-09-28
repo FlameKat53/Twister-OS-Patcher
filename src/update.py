@@ -34,7 +34,7 @@ def is_connected(hostname):
   return False
 
 def check_online():
-	url = "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/py/src/resources.py"
+	url = "https://raw.githubusercontent.com/FlameKat53/Twister-OS-Patcher/master/src/resources.py"
 	if is_connected("1.1.1.1"):
 		print("Network is connected")
 		return True
