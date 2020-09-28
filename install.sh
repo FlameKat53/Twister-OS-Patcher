@@ -25,6 +25,7 @@ sudo chmod +x *.sh
 
 cd /home/pi/patcher
 sudo rm README.md CODE_OF_CONDUCT.md CONTRIBUTING.md
+sudo rm -r .github
 
 #Adds commands
 sudo rm -f /usr/local/bin/twistpatch
