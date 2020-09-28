@@ -15,7 +15,7 @@ wget https://github.com/FlameKat53/Twister-OS-Patcher/archive/master.zip
 unzip master.zip
 rm master.zip
 sudo rm -r -f /home/pi/patcher
-mv Twister-OS-Patcher-py/ /home/pi/patcher/
+mv Twister-OS-Patcher-master/ /home/pi/patcher/
 cd /home/pi/patcher/
 python3 c_desktop.py $USER
 sudo chmod +x *.sh
