@@ -11,7 +11,7 @@ fi
 sudo apt install -y python3-pil python3-pil.imagetk python3-wget
 sudo pip3 install wget
 #Get archive from github and unzip it
-wget https://github.com/FlameKat53/Twister-OS-Patcher/archive/py.zip
+wget https://github.com/FlameKat53/Twister-OS-Patcher/archive/master.zip
 unzip py.zip
 rm py.zip
 sudo rm -r -f /home/pi/patcher
