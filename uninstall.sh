@@ -1,7 +1,7 @@
 #!/bin/bash
 echo 'Uninstalling Twister OS Patcher by FlameKat53, Jack47 and MobileGamesMotionYT...'
 echo 'Thanks for using me! You can install me again at "https://bit.ly/patchtwist"'
-cd ~
+cd /home/pi/
 
 #Checks to see if these files exist and replace or remove them
   sudo rm -r /home/pi/patcher/
