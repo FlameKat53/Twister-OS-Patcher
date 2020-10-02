@@ -60,4 +60,4 @@ Alpha/Beta
 
 Official release
 - [x] Release program to public and inclusion in patch 1.6
-- [] Release the Python3 patcher to public and inclusion in patch 1.9
+- [x] Release the Python3 patcher to public and inclusion in patch 1.8.2
