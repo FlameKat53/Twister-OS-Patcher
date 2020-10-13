@@ -21,7 +21,7 @@ python3 c_desktop.py $USER
 sudo chmod +x *.sh
 cd /home/pi/patcher/src/
 sudo chmod +x *.sh
-#crontab -l | { cat; echo "* 12 * * * python3 '/home/pi/patcher/src/notifysend.py'"; } | crontab -
+crontab -l | { cat; echo "0 11 * * * /bin/bash -c "/home/pi/patcher/src/patchnotify.sh""; } | crontab -
 
 cd /home/pi/patcher
 sudo rm README.md CODE_OF_CONDUCT.md CONTRIBUTING.md
