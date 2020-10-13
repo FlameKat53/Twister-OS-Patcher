@@ -18,9 +18,10 @@ If you notice the repo has been changed, run `twistpatch-update` to update your 
 There are 3 ways to open the patcher. Firstly, you can click on the "Twister OS Patcher" in your applications menu. Secondly, you can type "twistpatch" into terminal, and thirdly, you can use the "Patch Twister OS" button in notificationcenter. it will take a while to open, but once you open the patcher, make sure nothing important is running(compiling, unsaved mc worlds, etc)because you have to reboot after the patch. Once it is open, click the big button labeled "Update Twister OS" to download the latest scripts to check for updates. It will either start downloading patches and rebooting, or say you are on the latest patch and exit, or say you're offline and then exit. 
 If you have missed out on more than 1 patch, then you will have to run the patcher after each reboot due to the nature of how the patches install updates.
 
+
 ### Commands
 ```
-twistpatch:           Runs the main patcher script to patch Twister OS
+twistpatch:           Runs the GUI patcher
 twistpatch-update:    Removes and reinstalls TwistPatcher to get the latest code
 twistpatch-remove:    Uninstalls TwistPatcher from your system
 ```
