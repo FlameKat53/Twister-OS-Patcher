@@ -45,7 +45,7 @@ The patcher has been featured in these places:<br>
 [grayduck](https://www.youtube.com/channel/UCgfQjdc5RceRlTGfuthBs7g): Lending us his bash expertise and all graphics in this patcher.<br>
 [phoenixbyrd](https://github.com/phoenixbyrd): Uploading files for us to the website.<br>
 [kreal](https://github.com/krishenriksen): making checkforupdates.sh, modifying install.sh, and cron code.<br>
-[vlevit](https://github.com/vlevit/): https://github.com/vlevit/notify-send.sh<br>
+[Botspot](https://github.com/Botspot): Letting us yoink his "Update Buddy" code to make YAD popups possible.<br>
 [Jack477](https://github.com/Jack477): Letting us steal GUI code from CommanderPi and lending us python help. https://github.com/Jack477/CommanderPi
 
 # Changes
@@ -61,3 +61,4 @@ Alpha/Beta
 Official release
 - [x] Release program to public and inclusion in patch 1.6
 - [x] Release the Python3 patcher to public and inclusion in patch 1.8.2
+- [] Get YAD notifications to work for patches
