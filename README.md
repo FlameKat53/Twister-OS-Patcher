@@ -62,4 +62,4 @@ Alpha/Beta
 Official release
 - [x] Release program to public and inclusion in patch 1.6
 - [x] Release the Python3 patcher to public and inclusion in patch 1.8.2
-- [] Get YAD notifications to work for patches
+- [ ] Get YAD notifications to work for patches and inclusion in patch 1.?.?
