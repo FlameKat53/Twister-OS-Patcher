@@ -16,4 +16,5 @@ sudo rm -f /usr/local/bin/twistpatch
 sudo rm -f /usr/local/bin/twistpatch-update
 sudo rm -f /usr/local/bin/twistpatch-remove
 #crontab -l | grep -v notifysend | crontab -
+sudo rm ~/.config/autostart/patcher.desktop
 echo 'Uninstalled.'
