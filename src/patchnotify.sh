@@ -11,5 +11,5 @@ if [ "$localver" == "$latestver" ];then
 fi
 
 /home/pi/patcher/src/notify-send.sh --urgency=normal --expire-time=20000 --app-name=TwistPatch --icon=/home/pi/patcher/src/icons/logo.png --action=Update:~/patcher/patch.sh 'Twister OS update' $latestversion 'is now avaliable, click [Update] to update now!'
-sleep 1d
+sleep 43200
 /home/pi/patcher/src/patchpopup.sh
