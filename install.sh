@@ -56,7 +56,7 @@ echo "[Desktop Entry]
 Encoding=UTF-8
 Type=Application
 Name=Twister OS Patcher
-Exec=/home/pi/patcher/src/patchpopup.sh
+Exec=/home/pi/patcher/src/patchnotify.sh
 OnlyShowIn=XFCE;
 StartupNotify=false
 Terminal=false

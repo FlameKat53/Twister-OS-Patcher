@@ -38,5 +38,5 @@ while true;do
     bash /home/pi/patcher/patch.sh
   fi
   
-  sleep 7d
+  sleep 1d
 done
