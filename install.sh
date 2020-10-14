@@ -1,5 +1,5 @@
 #!/bin/bash
-echo 'Installing Twister OS Patcher by FlameKat53, Jack47, and MobileGamesMotionYT...'
+echo 'Installing Twister OS Patcher by FlameKat53, Jack47, and RaspberryPiNews...'
 
 problem=$(dpkg -s python3-tk|grep installed)
 path=$(pwd)
