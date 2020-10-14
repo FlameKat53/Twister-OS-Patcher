@@ -61,7 +61,6 @@ OnlyShowIn=XFCE;
 StartupNotify=false
 Terminal=false
 Hidden=false" > ~/.config/autostart/patcher.desktop
-sudo chmod +x ~/.config/autostart/patcher.desktop
-
-bash /home/pi/patcher/src/patchpopup.sh
+chmod +x ~/.config/autostart/patcher.desktop
 echo 'Install completed sucessfully!'
+read -p 'Please press [Enter] to reboot and finish installation!'
