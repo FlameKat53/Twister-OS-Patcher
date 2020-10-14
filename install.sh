@@ -22,11 +22,11 @@ python3 c_desktop.py $USER
 sudo chmod +x *.sh
 cd /home/pi/patcher/src/
 sudo chmod +x *.sh
-crontab -l | { cat; echo "0 11 * * * /bin/bash -c "/home/pi/patcher/src/patchnotify.sh""; } | crontab -
+#crontab -l | { cat; echo "0 11 * * * /bin/bash -c "/home/pi/patcher/src/patchnotify.sh""; } | crontab -
 
-cd /home/pi/patcher
-sudo rm README.md CODE_OF_CONDUCT.md CONTRIBUTING.md
-sudo rm -r .github
+cd ~/patcher
+rm README.md CODE_OF_CONDUCT.md CONTRIBUTING.md
+rm -r .github
 
 #Adds commands
 sudo rm -f /usr/local/bin/twistpatch
@@ -50,3 +50,17 @@ if [ ! -f "/usr/local/bin/twistpatch-update" ]; then
     sudo ln -s /home/pi/patcher/upgradepatcher.sh /usr/local/bin/twistpatch-update
     sudo chmod +x /usr/local/bin/twistpatch-update
 fi
+
+mkdir -p ~/.config/autostart
+echo "[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Twister OS Patcher
+Exec=/home/pi/patcher/src/patchnotify.sh
+OnlyShowIn=XFCE;
+StartupNotify=false
+Terminal=false
+Hidden=false" > ~/.config/autostart/patcher.desktop
+
+bash /home/pi/patcher/src/patchnotify.sh
+echo 'Install completed sucessfully!'
