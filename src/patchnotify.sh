@@ -31,5 +31,5 @@ while true;do
     --button='Update now'!"/home/pi/patcher/src/icons/download.png":0 2>/dev/null || exit 0
 
   bash /home/pi/patcher/patch.sh
-  sleep 7d
+  sleep 3d
 done
