@@ -61,6 +61,7 @@ OnlyShowIn=XFCE;
 StartupNotify=false
 Terminal=false
 Hidden=false" > ~/.config/autostart/patcher.desktop
+sudo chmod +x ~/.config/autostart/patcher.desktop
 
 bash /home/pi/patcher/src/patchnotify.sh
 echo 'Install completed sucessfully!'
