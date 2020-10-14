@@ -1,7 +1,6 @@
 #!/bin/bash
 
 while true;do
-  sleep 10
   latestversion="$(wget -qO- https://twisteros.com/downloads.html | grep 'Version' | head -n1 | awk '{print $4}' | cut -f1 -d"<")"
   localversion="$(twistver | awk '{print $4}' | cut -f1 -d"<")"
   
@@ -38,5 +37,5 @@ while true;do
     bash /home/pi/patcher/patch.sh
   fi
   
-  sleep 1d
+  sleep 43200
 done
