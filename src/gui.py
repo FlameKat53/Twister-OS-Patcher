@@ -107,7 +107,7 @@ class Window:
 			else:
 				content_frame2.pack_forget()
 				content_frame.pack()
-				btn['text'] = 'About/Update Patcher'
+				btn['text'] = 'About'
 				content_frame.hidden = 0
 
 		bind_label = tk.Label( mainframe, text="Press [Esc] to close", font=("TkDefaultFont", 11, "bold" ))
