@@ -1,5 +1,8 @@
 #!/bin/bash
 cd /home/pi/patcher/src/
-#rm -f /home/pi/patcher/src/checkversion.py
-#wget https://twisteros.com/Patches/checkversion.py
-sudo python3 /home/pi/patcher/src/main.py ${HOME} $1> log.txt
+
+if [ "$1" == "--nogui" ]; then
+	sudo python3 /home/pi/patcher/src/main.py ${HOME} 1 1
+else
+	sudo python3 /home/pi/patcher/src/main.py ${HOME} 0 0 > log.txt
+fi

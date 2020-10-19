@@ -1,11 +1,2 @@
 Exist and read
-Frame
-TSeparator
-Frame
-TSeparator
-Frame
-Button
-Frame
-Label
 Network is connected
-<class 'tkinter.Tk'>

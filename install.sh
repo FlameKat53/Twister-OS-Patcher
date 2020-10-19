@@ -32,7 +32,7 @@ rm -r .github
 sudo rm -f /usr/local/bin/twistpatch
 
 if [ ! -f "/usr/local/bin/twistpatch" ]; then
-    sudo ln -s '/home/pi/patcher/src/noup.sh' /usr/local/bin/twistpatch
+    sudo ln -s '/home/pi/patcher/src/start.sh' /usr/local/bin/twistpatch
     sudo chmod +x /usr/local/bin/twistpatch
 fi
 
