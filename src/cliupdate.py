@@ -17,37 +17,37 @@ def other():
 def update():
 	if os.path.exists('/usr/local/bin/twistver') == False:
 		if os.path.exists('/usr/bin/xscreensaver') == False:
-			os.system('bash -c "read -p You appear to be running Twister OS version 1.0 [Enter] for Yes, otherwise press [CTRL C]"')
+			os.system('bash -c "read -p \'You appear to be running Twister OS version 1.0 [Enter] for Yes, otherwise press [CTRL C]\'"')
 			print('Downloading 1.1.0 Patch...')
 			wget.download('https://twisteros.com/Patches/TwisterOSv1-1Patch.zip', out='/home/pi/patcher/src/patch.zip')
 			other()
 
 		if os.path.exists('/usr/bin/com.github.libredeb.lightpad') == False:
-			os.system('bash -c "read -p You appear to be running Twister OS version 1.1 [Enter] for Yes, otherwise press [CTRL C]"')
+			os.system('bash -c "read -p \'You appear to be running Twister OS version 1.1 [Enter] for Yes, otherwise press [CTRL C]\'"')
 			print('Downloading 1.2.0 Patch...')
 			wget.download('https://twisteros.com/Patches/TwisterOSv1-2Patch.zip', out='/home/pi/patcher/src/patch.zip')
 			other()
 
 		if os.path.exists('/home/pi/WebApps/Discord/discord.sh') == False:
-			os.system('bash -c "read -p You appear to be running Twister OS version 1.2 [Enter] for Yes, otherwise press [CTRL C]"')
+			os.system('bash -c "read -p \'You appear to be running Twister OS version 1.2 [Enter] for Yes, otherwise press [CTRL C]\'"')
 			print('Downloading 1.3.0 Patch...')
 			wget.download('https://twisteros.com/Patches/TwisterOSv1-3Patch.zip', out='/home/pi/patcher/src/patch.zip')
 			other()
 
 		if os.path.exists('/usr/share/ThemeSwitcher/Raspbian95/splash.png') == False:
-			os.system('bash -c "read -p You appear to be running Twister OS version 1.3 [Enter] for Yes, otherwise press [CTRL C]"')
+			os.system('bash -c "read -p \'You appear to be running Twister OS version 1.3 [Enter] for Yes, otherwise press [CTRL C]\'"')
 			print('Downloading 1.4.1 Patch...')
 			wget.download('https://archive.org/download/twister-osv-1-4-1-patch/TwisterOSv1-4-1Patch.zip', out='/home/pi/patcher/src/patch.zip')
 			other()
 
 		if os.path.exists('/usr/share/ThemeSwitcher/RaspbianXP/splash.png') == False:
-			os.system('bash -c "read -p You appear to be running Twister OS version 1.4.1 [Enter] for Yes, otherwise press [CTRL C]"')
+			os.system('bash -c "read -p \'You appear to be running Twister OS version 1.4.1 [Enter] for Yes, otherwise press [CTRL C]\'"')
 			print('Downloading 1.5.0 Patch...')
 			wget.download('https://twisteros.com/Patches/TwisterOS1-5Patch.zip', out='/home/pi/patcher/src/patch.zip')
 			other()
 
 		if os.path.exists('/usr/local/bin/twistver') == False:
-			os.system('bash -c "read -p You appear to be running Twister OS version 1.5.0 or 1.5.1, [Enter] for Yes, otherwise press [CTRL C]"')
+			os.system('bash -c "read -p \'You appear to be running Twister OS version 1.5.0 or 1.5.1, [Enter] for Yes, otherwise press [CTRL C]\'"')
 			print('Downloading 1.5.2 Patch...')
 			wget.download('https://twisteros.com/Patches/TwisterOSv1-5-2Patch.zip', out='/home/pi/patcher/src/patch.zip')
 			other()
