@@ -6,6 +6,7 @@ versions = []
 verbuff = ""
 def other():
 	print('Extracting zip...')
+	os.system('rm *patchinstall.sh')
 	os.system('unzip patch.zip')
 	os.system('rm patch.zip')
 	print('The patcher will begin updating your system')
