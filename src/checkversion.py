@@ -126,7 +126,7 @@ def update():
 						wget.download('https://twisteros.com/Patches/TwisterOSv'+xnver[0]+'-'+xnver[1]+'-'+xnver[2]+'Patch.zip', out='/home/pi/patcher/src/patch.zip')
 						other()
 						break
-			msb.showinfo(title="TwistPatch", message='You have already the newest version of TwisterOS: '+str(xver[0])+'.'+str(xver[1])+'.'+str(xver[2]))	
+			msb.showinfo(title="TwistPatch", message='You already have the latest version of TwisterOS: version '+str(xver[0])+'.'+str(xver[1])+'.'+str(xver[2]))	
 
 			
 			
