@@ -28,5 +28,5 @@ def cpi_open_url(link):
 	os.system('sudo -upi chromium-browser '+link)
 
 img_path = os.path.dirname('logo.png')
-webversion = sp.getoutput('wget -q https://twisteros.com/Patches/latest.txt && cat latest.txt && rm latest.txt')
+webversion = sp.getoutput('wget -q https://twisteros.com/Patches/latest.txt && head -n 1 latest.txt && rm latest.txt')
 twistver = sp.getoutput('twistver')
