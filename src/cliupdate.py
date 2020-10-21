@@ -88,7 +88,7 @@ def update():
 					else:
 						xnver.append(xnverbuff)
 						xnverbuff = ""
-				if (xver[2] == None) and (xnver[1]!=xver[1]) or (xnver[0]!=xver[0]):
+				if (xver[2] == None) or (xnver[1]!=xver[1]) or (xnver[0]!=xver[0]):
 					version_link = 'https://twisteros.com/Patches/TwisterOSv'+xnver[0]+'-'+xnver[1]+'Patch.zip'
 					if (((xnver[0]>=xver[0]) and (xnver[1]>xver[1]))):
 						print('Downloading '+xnver[0]+'.'+xnver[1]+'.'+xnver[2]+' Patch...')
