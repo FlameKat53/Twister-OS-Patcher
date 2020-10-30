@@ -13,7 +13,8 @@ fi
 if [ "$1" == "--nogui" ]; then
 	cd ${HOME}/patcher/src/
 	python3 main.py ${HOME} 1 1
-else
+fi
+if [ "$1" == "" ]; then
 	cd ${HOME}/patcher/src/
 	python3 main.py ${HOME} 0 0 > log.txt
 fi
