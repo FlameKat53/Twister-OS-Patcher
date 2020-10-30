@@ -1,8 +1,18 @@
 #!/bin/bash
-cd /home/pi/patcher/src/
+cd ${HOME}/patcher/src/
+rm -f ${HOME}/patcher/src/latest.txt
 
+if [ "$1" == "--remove" ]; then
+	cd ${HOME}
+	./patcher/uninstall.sh
+fi
+
+if [ "$1" == "--update" ]; then
+	cd ${HOME}
+	./patcher/upgradepatcher.sh
+fi
 if [ "$1" == "--nogui" ]; then
-	sudo python3 /home/pi/patcher/src/main.py ${HOME} 1 1
+	python3 main.py ${HOME} 1 1
 else
-	sudo python3 /home/pi/patcher/src/main.py ${HOME} 0 0 > log.txt
+	python3 main.py ${HOME} 0 0 > log.txt
 fi
