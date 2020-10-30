@@ -23,8 +23,9 @@ You may have noticed that sometimes you get a little pop-up window on your deskt
 ### Commands
 ```
 twistpatch:           Runs the GUI patcher
-twistpatch --update:    Removes and reinstalls TwistPatcher to get the latest code
-twistpatch --remove:    Uninstalls TwistPatcher from your system
+twistpatch --nogui:   Runs the CLI patcher
+twistpatch --update:  Removes and reinstalls TwistPatcher to get the latest code
+twistpatch --remove:  Uninstalls TwistPatcher from your system
 ```
 
 # Icon
