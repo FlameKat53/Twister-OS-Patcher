@@ -13,7 +13,7 @@ f_content = "[Desktop Entry]\nName=Twister OS Patcher\nComment=Updates Twister O
 print(f_content)
 
 x_dir = "/home/pi/.local/share/applications/patcher.desktop"
-print("Save menu shortcut to %s" % x_dir)
+print("Saved menu shortcut to %s" % x_dir)
 f2 = open(x_dir, "w+")
 f2.write(f_content)
 f2.close
