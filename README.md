@@ -11,7 +11,7 @@ An updater for Twister OS that downloads, unzips, and runs the latest patch for 
 If you notice the repo has been changed, run `twistpatch --update` to update your current version of the patcher.
 
 # Uninstall
-`twistpatch-remove`
+`twistpatch --remove`
 
 # Usage
 [![Screenshot-2020-09-21-11-40-47.png](https://i.postimg.cc/JzSG6D3p/Screenshot-2020-09-21-11-40-47.png)](https://postimg.cc/NK7sL0zX) [![Screenshot-2020-09-21-11-41-29.png](https://i.postimg.cc/0NmrLkcP/Screenshot-2020-09-21-11-41-29.png)](https://postimg.cc/CZhF8V3Q)<br>
