@@ -30,25 +30,13 @@ rm -r .github
 
 #Adds commands
 sudo rm -f /usr/local/bin/twistpatch
+sudo rm -f /usr/local/bin/twistpatch-uninstall
+sudo rm -f /usr/local/bin/twistpatch-remove
+sudo rm -f /usr/local/bin/twistpatch-update
 
 if [ ! -f "/usr/local/bin/twistpatch" ]; then
     sudo ln -s '/home/pi/patcher/src/start.sh' /usr/local/bin/twistpatch
     sudo chmod +x /usr/local/bin/twistpatch
-fi
-
-sudo rm -f /usr/local/bin/twistpatch-uninstall
-sudo rm -f /usr/local/bin/twistpatch-remove
-
-if [ ! -f "/usr/local/bin/twistpatch-remove" ]; then
-    sudo ln -s '/home/pi/patcher/uninstall.sh' /usr/local/bin/twistpatch-remove
-    sudo chmod +x /usr/local/bin/twistpatch-remove
-fi
-
-sudo rm -f /usr/local/bin/twistpatch-update
-
-if [ ! -f "/usr/local/bin/twistpatch-update" ]; then
-    sudo ln -s /home/pi/patcher/upgradepatcher.sh /usr/local/bin/twistpatch-update
-    sudo chmod +x /usr/local/bin/twistpatch-update
 fi
 
 mkdir -p ~/.config/autostart
