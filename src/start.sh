@@ -1,5 +1,6 @@
 #!/bin/bash
-rm -f ${HOME}/patcher/src/latestui.txt
+rm -f ${HOME}/patcher/src/latest.txt
+rm -f ${HOME}/patcher/install.sh
 if [ "$1" == "--remove" ]; then
 	cd ${HOME}
 	./patcher/uninstall.sh
