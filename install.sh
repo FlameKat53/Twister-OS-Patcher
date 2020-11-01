@@ -51,5 +51,3 @@ Terminal=false
 Hidden=false" > ~/.config/autostart/patcher.desktop
 chmod +x ~/.config/autostart/patcher.desktop
 echo 'Install completed sucessfully!'
-read -p 'Please press [Enter] to reboot and finish installation!'
-sudo reboot
