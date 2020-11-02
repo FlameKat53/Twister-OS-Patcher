@@ -7,10 +7,10 @@ import urllib.request
 versions = []
 verbuff = ""
 def other():
-	msb.showinfo(title="TwistPatch", message='Extracting zip... Press OK to begin extraction.')
+	#msb.showinfo(title="TwistPatch", message='Extracting zip... Press OK to begin extraction.')
 	os.system('unzip patch.zip')
 	os.system('rm patch.zip')
-	msb.showinfo(title="TwistPatch", message='The patcher will begin updating your system\npress OK to continue')
+	#msb.showinfo(title="TwistPatch", message='The patcher will begin updating your system\npress OK to continue')
 	os.system('chmod +x *patchinstall.sh')
 	os.system('xfce4-terminal -e ./*patchinstall.sh')
 
@@ -115,14 +115,14 @@ def update():
 				if (xver[2] == None) or (xnver[1]!=xver[1]) or (xnver[0]!=xver[0]):
 					version_link = 'https://twisteros.com/Patches/TwisterOSv'+xnver[0]+'-'+xnver[1]+'Patch.zip'
 					if (((xnver[0]>=xver[0]) and (xnver[1]>xver[1]))):
-						msb.showinfo(title="TwistPatch", message='Downloading '+xnver[0]+'.'+xnver[1]+' Patch in the background...\nPress OK to begin downloading.')
+						#msb.showinfo(title="TwistPatch", message='Downloading '+xnver[0]+'.'+xnver[1]+' Patch in the background...\nPress OK to begin downloading.')
 						wget.download('https://twisteros.com/Patches/TwisterOSv'+xnver[0]+'-'+xnver[1]+'Patch.zip', out='/home/pi/patcher/src/patch.zip')
 						other()
 						break
 				elif (xnver[2] != xver[2]) or (xnver[1]!=xver[1]) or (xnver[0]!=xver[0]):
 					version_link = 'https://twisteros.com/Patches/TwisterOSv'+xnver[0]+'-'+xnver[1]+'-'+xnver[2]+'Patch.zip'
 					if (((xnver[0]>=xver[0]) and (xnver[1]>=xver[1]) and (xnver[2]>xver[2]))):
-						msb.showinfo(title="TwistPatch", message='Downloading '+xnver[0]+'.'+xnver[1]+'.'+xnver[2]+' Patch in the background...\nPress OK to begin downloading.')
+						#msb.showinfo(title="TwistPatch", message='Downloading '+xnver[0]+'.'+xnver[1]+'.'+xnver[2]+' Patch in the background...\nPress OK to begin downloading.')
 						wget.download('https://twisteros.com/Patches/TwisterOSv'+xnver[0]+'-'+xnver[1]+'-'+xnver[2]+'Patch.zip', out='/home/pi/patcher/src/patch.zip')
 						other()
 						break
