@@ -11,7 +11,7 @@ def other():
 	os.system('rm patch.zip')
 	print('The patcher will begin updating your system')
 	os.system('chmod +x *patchinstall.sh')
-	os.system('xfce4-terminal -e ./*patchinstall.sh')
+	os.system('bash -c ./*patchinstall.sh')
 
 
 	
