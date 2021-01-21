@@ -2,6 +2,7 @@
 ![](https://media.discordapp.net/attachments/738534235194916884/759921733825462322/TwisterOSPatcherLogo.png?width=960&height=186)<br>
 An updater for Twister OS that downloads, unzips, and runs the latest patch for Twister OS. It is fine if you run the patcher more than once as it auto-detects your version. when you run the patcher, you must reboot your computer after patching completes.<br>
 
+:warning: This program isn't supported anymore! Twister OS now uses the lighter and more bug free [TwisterUP](https://github.com/Botspot/TwistUP) by Botspot. This means all the code here won't be maintained or supported from now on! This repo will still be up for historial purposes, as well as for the older Twister OS systems that use this patcher. 
 
 #### Go support Twister OS!</br>
 ### <a href="https://twisteros.com/">>Twister OS<</a>
@@ -65,3 +66,4 @@ Official release
 - [x] Release program to public and inclusion in patch 1.6
 - [x] Release the Python3 patcher to public and inclusion in patch 1.8.2
 - [x] Get YAD notifications to work for patches and inclusion in patch 1.8.5
+- [x] As of patch 1.8.5, this patcher has been archived in favour of [TwistUP](https://github.com/Botspot/TwistUP)
